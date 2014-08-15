@@ -1,0 +1,8 @@
+I, [2014-08-15T09:48:46.527244 #4498]  INFO -- : Started GET "/staff" for 10.0.2.2 at 2014-08-15 09:48:46 +0900
+I, [2014-08-15T09:48:46.635570 #4498]  INFO -- : Processing by Staff::TopController#index as HTML
+I, [2014-08-15T09:48:46.660116 #4498]  INFO -- : Completed 500 Internal Server Error in 24ms
+F, [2014-08-15T09:48:46.662944 #4498] FATAL -- : 
+RuntimeError ():
+  app/controllers/staff/top_controller.rb:3:in `index'
+
+
