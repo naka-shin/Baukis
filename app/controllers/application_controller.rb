@@ -5,9 +5,14 @@ class ApplicationController < ActionController::Base
 
   layout :set_layout
 
+  class Forbidden < ActionController::ActionControllerError; end
+  class IpAddressRejected < ActionController::ActionControllerError; end
+
   rescue_from ActiveRecord::RecordNotFound, with: :rescue404
 
   rescue_from Exception, with: :rescue500
+  rescue_from Forbidden, with: :rescue403
+  rescue_from IpAddressRejected, with: :rescue403
 
   private
   def set_layout
@@ -16,6 +21,11 @@ class ApplicationController < ActionController::Base
     else
       'customer'
     end
+  end
+
+  def rescue403(e)
+    @exception = e
+    render 'errors/forbidden', status: 403
   end
 
   def rescue404(e)

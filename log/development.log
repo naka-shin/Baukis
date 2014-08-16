@@ -559,3 +559,94 @@ Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-08-15 09:35:02 +
 
 
 Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-08-15 09:35:02 +0900
+
+
+Started GET "/staff" for 10.0.2.2 at 2014-08-15 22:30:10 +0900
+Processing by Staff::TopController#index as HTML
+Completed 500 Internal Server Error in 112ms
+
+ActionView::MissingTemplate (Missing template errors/internal_server_error with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/vagrant/app/views"
+  * "/vagrant"
+  * "/"
+):
+  app/controllers/application_controller.rb:28:in `rescue500'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (10.5ms)
+
+
+Started GET "/staff" for 10.0.2.2 at 2014-08-15 22:41:42 +0900
+Processing by Staff::TopController#index as HTML
+  Rendered errors/internal_server_error.html.erb within layouts/staff (5.3ms)
+  Rendered shared/_header.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (4.4ms)
+Completed 500 Internal Server Error in 673ms (Views: 635.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-08-15 22:41:43 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-08-15 22:41:44 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-08-15 22:41:44 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-08-15 22:41:44 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-08-15 22:41:44 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-08-15 22:41:44 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-08-15 22:41:44 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-08-15 22:41:44 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-08-15 22:41:44 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-08-15 22:41:44 +0900
+
+
+Started GET "/staff" for 10.0.2.2 at 2014-08-15 22:42:33 +0900
+Processing by Staff::TopController#index as HTML
+  Rendered staff/top/index.html.erb within layouts/staff (1.2ms)
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 193ms (Views: 191.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-08-15 22:42:33 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-08-15 22:42:33 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-08-15 22:42:33 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-08-15 22:42:34 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-08-15 22:42:34 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-08-15 22:42:34 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-08-15 22:42:34 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-08-15 22:42:34 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-08-15 22:42:34 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-08-15 22:42:34 +0900
