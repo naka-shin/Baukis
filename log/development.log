@@ -561,6 +561,7 @@ Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-08-15 09:35:02 +
 Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-08-15 09:35:02 +0900
 
 
+<<<<<<< HEAD
 Started GET "/staff" for 10.0.2.2 at 2014-08-15 22:30:10 +0900
 Processing by Staff::TopController#index as HTML
 Completed 500 Internal Server Error in 112ms
@@ -650,3 +651,63 @@ Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-08-15 22:42:34 +
 
 
 Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-08-15 22:42:34 +0900
+=======
+Started GET "/" for 10.0.2.2 at 2014-08-16 16:38:30 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/templates/rails/welcome/index.html.erb (7.5ms)
+Completed 200 OK in 74ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-08-16 16:38:37 +0900
+Processing by Admin::TopController#index as HTML
+  Rendered admin/top/index.html.erb within layouts/admin (0.7ms)
+  Rendered shared/_header.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 352ms (Views: 351.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-08-16 16:38:38 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-08-16 16:38:38 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-08-16 16:38:38 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-08-16 16:38:38 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-08-16 16:38:38 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-08-16 16:38:38 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-08-16 16:38:38 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-08-16 16:38:38 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-08-16 16:38:39 +0900
+  [1m[36m (33.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (15.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateStaffMembers (20140816073951)
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateStaffMembers (20140816073951)
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateStaffMembers (20140816073951)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateStaffMembers (20140816073951)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateStaffMembers (20140816073951)
+  [1m[35m (23.3ms)[0m  CREATE TABLE `staff_members` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) NOT NULL, `email_for_index` varchar(255) NOT NULL, `family_name` varchar(255) NOT NULL, `given_name` varchar(255) NOT NULL, `family_name_kana` varchar(255) NOT NULL, `given_name_kana` varchar(255) NOT NULL, `hashed_password` varchar(255), `start_date` date NOT NULL, `end_date` date, `suspended` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (16.2ms)[0m  [1mCREATE UNIQUE INDEX `index_staff_members_on_email_for_index`  ON `staff_members` (`email_for_index`) [0m
+  [1m[35m (14.2ms)[0m  CREATE  INDEX `index_staff_members_on_family_name_kana_and_given_name_kana`  ON `staff_members` (`family_name_kana`, `given_name_kana`) 
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140816073951')
+  [1m[36m (19.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.7ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+>>>>>>> 3c5a7905f66854d142017448652b0520fe2bceed
