@@ -711,3 +711,188 @@ Migrating to CreateStaffMembers (20140816073951)
   [1m[36m (19.3ms)[0m  [1mCOMMIT[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.7ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
 >>>>>>> 3c5a7905f66854d142017448652b0520fe2bceed
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-08-19 22:55:30 +0900
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/migration.rb:389:in `check_pending!'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/migration.rb:377:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/callbacks.rb:82:in `run_callbacks'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:38:in `call_app'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:20:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:68:in `tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:20:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/static.rb:64:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/engine.rb:514:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/application.rb:144:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.8ms)
+  [1m[36m (48.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (19.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateStaffMembers (20140816073951)
+  [1m[35m (11.8ms)[0m  CREATE TABLE `staff_members` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) NOT NULL, `email_for_index` varchar(255) NOT NULL, `family_name` varchar(255) NOT NULL, `given_name` varchar(255) NOT NULL, `family_name_kana` varchar(255) NOT NULL, `given_name_kana` varchar(255) NOT NULL, `hashed_password` varchar(255), `start_date` date NOT NULL, `end_date` date, `suspended` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (22.8ms)[0m  [1mCREATE UNIQUE INDEX `index_staff_members_on_email_for_index`  ON `staff_members` (`email_for_index`) [0m
+  [1m[35m (17.6ms)[0m  CREATE  INDEX `index_staff_members_on_family_name_kana_and_given_name_kana`  ON `staff_members` (`family_name_kana`, `given_name_kana`) 
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140816073951')
+  [1m[36m (3.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-08-19 22:57:34 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::TopController#index as HTML
+  Rendered errors/forbidden.html.erb within layouts/admin (7.8ms)
+  Rendered shared/_header.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 403 Forbidden in 475ms (Views: 438.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-08-19 22:57:35 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-08-19 22:57:35 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-08-19 22:57:35 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-08-19 22:57:35 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-08-19 22:57:35 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-08-19 22:57:35 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-08-19 22:57:35 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-08-19 22:57:35 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-08-19 22:57:36 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-08-19 22:57:36 +0900
+
+
+Started GET "/customer" for 10.0.2.2 at 2014-08-19 22:58:42 +0900
+Processing by Customer::TopController#index as HTML
+  Rendered errors/forbidden.html.erb within layouts/customer (0.2ms)
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 403 Forbidden in 312ms (Views: 308.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/customer/_colors.css?body=1" for 10.0.2.2 at 2014-08-19 22:58:42 +0900
+
+
+Started GET "/assets/customer/_dimensions.css?body=1" for 10.0.2.2 at 2014-08-19 22:58:42 +0900
+
+
+Started GET "/assets/customer/container.css?body=1" for 10.0.2.2 at 2014-08-19 22:58:43 +0900
+
+
+Started GET "/assets/customer.css?body=1" for 10.0.2.2 at 2014-08-19 22:58:43 +0900
+
+
+Started GET "/assets/customer/layout.css?body=1" for 10.0.2.2 at 2014-08-19 22:58:43 +0900
+
+
+Started GET "/xyz" for 10.0.2.2 at 2014-08-19 23:07:36 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ErrorsController#routing_error as HTML
+  Parameters: {"anything"=>"xyz"}
+  Rendered errors/not_found.html.erb within layouts/customer (8.7ms)
+  Rendered shared/_header.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 404 Not Found in 542ms (Views: 503.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/custmor" for 10.0.2.2 at 2014-08-19 23:09:35 +0900
+Processing by ErrorsController#routing_error as HTML
+  Parameters: {"anything"=>"custmor"}
+  Rendered errors/not_found.html.erb within layouts/customer (0.2ms)
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 404 Not Found in 209ms (Views: 207.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customer" for 10.0.2.2 at 2014-08-19 23:09:54 +0900
+Processing by Customer::TopController#index as HTML
+  Rendered customer/top/index.html.erb within layouts/customer (0.6ms)
+  Rendered shared/_header.html.erb (0.2ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 188ms (Views: 186.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customer" for 10.0.2.2 at 2014-08-19 23:11:30 +0900
+Processing by Customer::TopController#index as HTML
+  Rendered errors/not_found.html.erb within layouts/customer (0.3ms)
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 404 Not Found in 175ms (Views: 173.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-08-19 23:11:31 +0900
+
+
+Started GET "/assets/customer.css?body=1" for 10.0.2.2 at 2014-08-19 23:11:31 +0900
+
+
+Started GET "/assets/customer/container.css?body=1" for 10.0.2.2 at 2014-08-19 23:11:31 +0900
+
+
+Started GET "/assets/customer/_colors.css?body=1" for 10.0.2.2 at 2014-08-19 23:11:31 +0900
+
+
+Started GET "/assets/customer/_dimensions.css?body=1" for 10.0.2.2 at 2014-08-19 23:11:31 +0900
+
+
+Started GET "/assets/customer/layout.css?body=1" for 10.0.2.2 at 2014-08-19 23:11:31 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-08-19 23:11:31 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-08-19 23:11:31 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-08-19 23:11:31 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-08-19 23:11:31 +0900
