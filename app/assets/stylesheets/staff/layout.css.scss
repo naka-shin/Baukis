@@ -23,6 +23,10 @@ header {
   span.logo-mark {
     font-weight: bold;
   }
+  a {
+    float: right;
+    color: $very_light_gray;
+  }
 }
 
 footer {
@@ -31,10 +35,9 @@ footer {
   width: 100%;
   background-color: $dark_gray;
   color: $very_light_gray;
-　　p {
+  p {
     text-align: center;
     padding: $moderate;
     margin: 0;
   }
 }
-

@@ -721,3 +721,554 @@ Migrating to CreateStaffMembers (20140816073951)
   [1m[35m (24.0ms)[0m  COMMIT
   [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM `staff_members`[0m
   [1m[36mStaffMember Load (0.6ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`id` ASC LIMIT 1[0m
+
+
+Started GET "/" for 10.0.2.2 at 2014-08-23 16:50:50 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/templates/rails/welcome/index.html.erb (6.1ms)
+Completed 200 OK in 64ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/staff" for 10.0.2.2 at 2014-08-23 16:50:56 +0900
+Processing by Staff::TopController#index as HTML
+  Rendered staff/top/index.html.erb within layouts/staff (0.6ms)
+  Rendered errors/internal_server_error.html.erb within layouts/staff (0.5ms)
+Completed 500 Internal Server Error in 557ms
+
+ActionView::Template::Error (Missing partial staff/shared/_header with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/vagrant/app/views"
+):
+     8: </head>
+     9: <body>
+    10:   <div id="wrapper">
+    11:     <%= render 'staff/shared/header' %>
+    12:     <div id="container">
+    13:       <%= yield %>
+    14:     </div>
+  app/views/layouts/staff.html.erb:11:in `_app_views_layouts_staff_html_erb___909247299690304319_70316918526580'
+  app/controllers/application_controller.rb:38:in `rescue500'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.5ms)
+
+
+Started GET "/staff" for 10.0.2.2 at 2014-08-23 16:58:17 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Staff::TopController#index as HTML
+  Rendered staff/top/index.html.erb within layouts/staff (6.0ms)
+  Rendered staff/shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 426ms (Views: 396.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-08-23 16:58:18 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-08-23 16:58:18 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-08-23 16:58:18 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-08-23 16:58:18 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-08-23 16:58:18 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-08-23 16:58:18 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-08-23 16:58:18 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-08-23 16:58:18 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-08-23 16:58:18 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-08-23 16:58:19 +0900
+
+
+Started GET "/staff" for 10.0.2.2 at 2014-08-23 17:00:03 +0900
+Processing by Staff::TopController#index as HTML
+  Rendered staff/top/index.html.erb within layouts/staff (0.2ms)
+  Rendered errors/internal_server_error.html.erb within layouts/staff (0.5ms)
+Completed 500 Internal Server Error in 310ms
+
+ActionView::Template::Error (Invalid CSS after "    float: right": expected ";", was ":"
+  (in /vagrant/app/assets/stylesheets/staff/layout.css.scss:27)):
+    2: <html>
+    3: <head>
+    4: <title><%= document_title %></title>
+    5:   <%= stylesheet_link_tag "staff", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/staff/layout.css.scss:27
+  app/views/layouts/staff.html.erb:5:in `_app_views_layouts_staff_html_erb___2504327884280252710_69900432812420'
+  app/controllers/application_controller.rb:38:in `rescue500'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.8ms)
+
+
+Started GET "/staff" for 10.0.2.2 at 2014-08-23 17:00:38 +0900
+Processing by Staff::TopController#index as HTML
+  Rendered staff/top/index.html.erb within layouts/staff (0.1ms)
+  Rendered staff/shared/_header.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 363ms (Views: 361.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-08-23 17:00:38 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-08-23 17:00:38 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-08-23 17:00:38 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-08-23 17:00:38 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-08-23 17:00:39 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-08-23 17:00:39 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-08-23 17:00:39 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-08-23 17:00:39 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-08-23 17:00:39 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-08-23 17:00:39 +0900
+
+
+Started GET "/staff/login" for 10.0.2.2 at 2014-08-23 17:01:25 +0900
+
+ActionController::RoutingError (uninitialized constant Staff::SessionsController):
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:240:in `const_get'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:240:in `block in constantize'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `each'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `inject'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `constantize'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:46:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:71:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:59:in `each'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:59:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:678:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/flash.rb:254:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/query_cache.rb:36:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/migration.rb:380:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/callbacks.rb:82:in `run_callbacks'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:38:in `call_app'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:20:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:68:in `tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:20:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/static.rb:64:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/engine.rb:514:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/application.rb:144:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (23.1ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.4ms)
+
+
+Started GET "/staff/login" for 10.0.2.2 at 2014-08-23 17:01:25 +0900
+
+ActionController::RoutingError (uninitialized constant Staff::SessionsController):
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:240:in `const_get'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:240:in `block in constantize'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `each'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `inject'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `constantize'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:46:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:71:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:59:in `each'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:59:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:678:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/flash.rb:254:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/query_cache.rb:36:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/migration.rb:380:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/callbacks.rb:82:in `run_callbacks'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:38:in `call_app'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:20:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:68:in `tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:20:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/static.rb:64:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/engine.rb:514:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/application.rb:144:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (29.1ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateAdministrators (20140823080749)
+  [1m[35m (25.7ms)[0m  CREATE TABLE `administrators` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) NOT NULL, `email_for_index` varchar(255) NOT NULL, `hashed_password` varchar(255), `suspended` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateAdministrators (20140823080749)
+  [1m[35m (0.8ms)[0m  CREATE TABLE `administrators` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) NOT NULL, `email_for_index` varchar(255) NOT NULL, `hashed_password` varchar(255), `suspended` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+Mysql2::Error: Table 'administrators' already exists: CREATE TABLE `administrators` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) NOT NULL, `email_for_index` varchar(255) NOT NULL, `hashed_password` varchar(255), `suspended` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (16.9ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (15.2ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateStaffMembers (20140816073951)
+  [1m[35m (6.7ms)[0m  CREATE TABLE `staff_members` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) NOT NULL, `email_for_index` varchar(255) NOT NULL, `family_name` varchar(255) NOT NULL, `given_name` varchar(255) NOT NULL, `family_name_kana` varchar(255) NOT NULL, `given_name_kana` varchar(255) NOT NULL, `hashed_password` varchar(255), `start_date` date NOT NULL, `end_date` date, `suspended` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (13.9ms)[0m  [1mCREATE UNIQUE INDEX `index_staff_members_on_email_for_index`  ON `staff_members` (`email_for_index`) [0m
+  [1m[35m (15.1ms)[0m  CREATE  INDEX `index_staff_members_on_family_name_kana_and_given_name_kana`  ON `staff_members` (`family_name_kana`, `given_name_kana`) 
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140816073951')
+  [1m[36m (6.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateAdministrators (20140823080749)
+  [1m[35m (6.9ms)[0m  CREATE TABLE `administrators` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) NOT NULL, `email_for_index` varchar(255) NOT NULL, `hashed_password` varchar(255), `suspended` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (14.1ms)[0m  [1mCREATE UNIQUE INDEX `index_administrators_on_email_for_index`  ON `administrators` (`email_for_index`) [0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20140823080749')[0m
+  [1m[35m (3.0ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/staff" for 10.0.2.2 at 2014-08-23 19:47:53 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Staff::TopController#index as HTML
+  Rendered staff/top/index.html.erb within layouts/staff (5.8ms)
+  Rendered staff/shared/_header.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 399ms (Views: 363.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-08-23 19:47:54 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-08-23 19:47:54 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-08-23 19:47:55 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-08-23 19:47:55 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-08-23 19:47:55 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-08-23 19:47:55 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-08-23 19:47:55 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-08-23 19:47:55 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-08-23 19:47:55 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-08-23 19:47:55 +0900
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-08-23 19:48:06 +0900
+Processing by Admin::TopController#index as HTML
+  Rendered admin/top/index.html.erb within layouts/admin (0.7ms)
+  Rendered admin/shared/_header.html.erb (36.8ms)
+  Rendered errors/internal_server_error.html.erb within layouts/admin (0.6ms)
+  Rendered admin/shared/_header.html.erb (66.4ms)
+Completed 500 Internal Server Error in 524ms
+
+ActionView::Template::Error (undefined local variable or method `current_staff_member' for #<#<Class:0x007fc83a084288>:0x007fc839278130>):
+    1: <header>
+    2: 	<span class="logo-mark">BAUKIS</span>
+    3: 	<%=
+    4: 	if current_staff_member
+    5: 		link_to 'ログアウト', :staff_session, method: :delete
+    6: 	else
+    7: 		link_to 'ログイン', :staff_login
+  app/views/admin/shared/_header.html.erb:4:in `_app_views_admin_shared__header_html_erb___1756878239987276567_70248965763160'
+  app/views/layouts/admin.html.erb:11:in `_app_views_layouts_admin_html_erb__4021329449279680649_70248971863620'
+  app/controllers/application_controller.rb:38:in `rescue500'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.2ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-08-23 19:49:01 +0900
+Processing by Admin::TopController#index as HTML
+  Rendered admin/top/index.html.erb within layouts/admin (0.1ms)
+  Rendered admin/shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 178ms (Views: 177.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-08-23 19:49:02 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-08-23 19:49:02 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-08-23 19:49:02 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-08-23 19:49:02 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-08-23 19:49:02 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-08-23 19:49:02 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-08-23 19:49:02 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-08-23 19:49:02 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-08-23 19:49:02 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-08-23 19:49:02 +0900
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-08-23 19:52:53 +0900
+Processing by Admin::TopController#index as HTML
+  Rendered admin/top/index.html.erb within layouts/admin (0.1ms)
+  Rendered admin/shared/_header.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 363ms (Views: 362.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-08-23 19:52:53 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-08-23 19:52:53 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-08-23 19:52:54 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-08-23 19:52:54 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-08-23 19:52:54 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-08-23 19:52:54 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-08-23 19:52:54 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-08-23 19:52:54 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-08-23 19:52:54 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-08-23 19:52:54 +0900
+
+
+Started GET "/staff/login" for 10.0.2.2 at 2014-08-23 19:52:58 +0900
+
+ActionController::RoutingError (uninitialized constant Staff::SessionsController):
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:240:in `const_get'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:240:in `block in constantize'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `each'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `inject'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `constantize'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:46:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:71:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:59:in `each'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:59:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:678:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/flash.rb:254:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/query_cache.rb:36:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/migration.rb:380:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/callbacks.rb:82:in `run_callbacks'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:38:in `call_app'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:20:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:68:in `tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:20:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/static.rb:64:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/engine.rb:514:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/application.rb:144:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (21.6ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (43.8ms)
+
+
+Started GET "/staff/login" for 10.0.2.2 at 2014-08-23 19:52:59 +0900
+
+ActionController::RoutingError (uninitialized constant Staff::SessionsController):
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:240:in `const_get'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:240:in `block in constantize'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `each'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `inject'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `constantize'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:46:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:71:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:59:in `each'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:59:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:678:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/flash.rb:254:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/query_cache.rb:36:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/migration.rb:380:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/callbacks.rb:82:in `run_callbacks'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:38:in `call_app'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:20:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:68:in `tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:20:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/static.rb:64:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/engine.rb:514:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/application.rb:144:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.5ms)
