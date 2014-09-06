@@ -31,5 +31,10 @@ describe Staff::Authenticator do
 			m = build(:staff_member, end_date: Date.today)
 			expect(Staff::Authenticator.new(m).authenticate('pw')).to be_falsey
 		end
+
+		example '停止フラグが立っていてもtrueを返す' do
+			m = build(:staff_member, suspended: true)
+			expect(Staff::Authenticator.new(m).authenticate('pw')).to be_truthy
+		end
 	end
 end

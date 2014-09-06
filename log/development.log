@@ -1,0 +1,1595 @@
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-06 14:33:01 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (4.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::TopController#index as HTML
+  Rendered admin/top/index.html.erb within layouts/admin (6.6ms)
+  Rendered admin/shared/_header.html.erb (1.1ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 817ms (Views: 777.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 14:33:03 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 14:33:03 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 14:33:03 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-06 14:33:03 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-06 14:33:03 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 14:33:03 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-06 14:33:03 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 14:33:04 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 14:33:04 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 14:33:04 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 14:33:04 +0900
+
+
+Started GET "/staff/login" for 10.0.2.2 at 2014-09-06 14:33:08 +0900
+
+SyntaxError (/vagrant/app/controllers/staff/sessions_controller.rb:26: syntax error, unexpected keyword_else):
+  app/controllers/staff/sessions_controller.rb:26: syntax error, unexpected keyword_else
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.5ms)
+
+
+Started GET "/staff/login" for 10.0.2.2 at 2014-09-06 14:33:09 +0900
+
+SyntaxError (/vagrant/app/controllers/staff/sessions_controller.rb:26: syntax error, unexpected keyword_else):
+  app/controllers/staff/sessions_controller.rb:26: syntax error, unexpected keyword_else
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.1ms)
+
+
+Started GET "/staff/login" for 10.0.2.2 at 2014-09-06 14:33:48 +0900
+Processing by Staff::SessionsController#new as HTML
+  Rendered staff/sessions/new.html.erb within layouts/staff (42.2ms)
+  Rendered staff/shared/_header.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 309ms (Views: 293.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 14:33:48 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 14:33:49 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 14:33:49 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-06 14:33:49 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 14:33:49 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-06 14:33:49 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-06 14:33:49 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 14:33:49 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 14:33:49 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 14:33:49 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 14:33:49 +0900
+
+
+Started GET "/admin/login" for 10.0.2.2 at 2014-09-06 14:34:01 +0900
+Processing by Admin::SessionsController#new as HTML
+  Rendered admin/sessions/new.html.erb within layouts/admin (2.6ms)
+  Rendered admin/shared/_header.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 184ms (Views: 176.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 14:34:01 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 14:34:01 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 14:34:01 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 14:34:01 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-06 14:34:01 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 14:34:01 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 14:34:01 +0900
+
+
+Started POST "/admin/session" for 10.0.2.2 at 2014-09-06 14:34:14 +0900
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0xzjzby/3Hk7KO7T9gktKlTSDeS1V86AmmGPjWdew/s=", "admin_login_form"=>{"email"=>"taro@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[35mAdministrator Load (6.4ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`email_for_index` = 'taro@example.com' LIMIT 1
+  Rendered admin/sessions/new.html.erb within layouts/admin (1.2ms)
+  Rendered admin/shared/_header.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 253ms (Views: 171.8ms | ActiveRecord: 28.7ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 14:34:14 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 14:34:15 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 14:34:15 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 14:34:15 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 14:34:15 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-06 14:34:15 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 14:34:15 +0900
+
+
+Started GET "/staff/login" for 10.0.2.2 at 2014-09-06 14:34:18 +0900
+Processing by Staff::SessionsController#new as HTML
+  Rendered staff/sessions/new.html.erb within layouts/staff (1.4ms)
+  Rendered staff/shared/_header.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 167ms (Views: 165.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-06 14:34:18 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 14:34:18 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-06 14:34:18 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 14:34:18 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 14:34:18 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 14:34:18 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-06 14:34:18 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 14:34:19 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 14:34:19 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 14:34:19 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 14:34:19 +0900
+
+
+Started GET "/staff/login" for 10.0.2.2 at 2014-09-06 14:35:40 +0900
+Processing by Staff::SessionsController#new as HTML
+  Rendered staff/sessions/new.html.erb within layouts/staff (0.8ms)
+  Rendered staff/shared/_header.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 180ms (Views: 179.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 14:35:40 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 14:35:40 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-06 14:35:41 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 14:35:41 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-06 14:35:41 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 14:35:41 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-06 14:35:41 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 14:35:41 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 14:35:41 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 14:35:41 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 14:35:41 +0900
+
+
+Started POST "/staff/session" for 10.0.2.2 at 2014-09-06 14:35:48 +0900
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0xzjzby/3Hk7KO7T9gktKlTSDeS1V86AmmGPjWdew/s=", "staff_login_form"=>{"email"=>"taro@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mStaffMember Load (0.8ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`email_for_index` = 'taro@example.com' LIMIT 1[0m
+  Rendered staff/sessions/new.html.erb within layouts/staff (0.8ms)
+  Rendered staff/shared/_header.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 317ms (Views: 163.6ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 14:35:48 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 14:35:48 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 14:35:48 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-06 14:35:48 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-06 14:35:48 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 14:35:48 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-06 14:35:49 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 14:35:49 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 14:35:49 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 14:35:49 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 14:35:49 +0900
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM `administrators`[0m
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM `staff_members`[0m
+  [1m[36mStaffMember Load (0.7ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`id` ASC LIMIT 1[0m
+  [1m[36mStaffMember Load (0.7ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`id` ASC LIMIT 1[0m
+
+
+Started POST "/staff/session" for 10.0.2.2 at 2014-09-06 14:48:55 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0xzjzby/3Hk7KO7T9gktKlTSDeS1V86AmmGPjWdew/s=", "staff_login_form"=>{"email"=>"taro@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[35mStaffMember Load (0.6ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`email_for_index` = 'taro@example.com' LIMIT 1
+Redirected to http://localhost:3000/staff
+Completed 302 Found in 213ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/staff" for 10.0.2.2 at 2014-09-06 14:48:57 +0900
+Processing by Staff::TopController#index as HTML
+  Rendered staff/top/index.html.erb within layouts/staff (5.6ms)
+  [1m[36mStaffMember Load (0.6ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1[0m
+  Rendered staff/shared/_header.html.erb (2.5ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 372ms (Views: 370.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 14:48:57 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-06 14:48:57 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 14:48:57 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 14:48:57 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-06 14:48:57 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 14:48:58 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-06 14:48:58 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 14:48:58 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 14:48:58 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 14:48:58 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 14:48:58 +0900
+
+
+Started DELETE "/staff/session" for 10.0.2.2 at 2014-09-06 14:49:03 +0900
+Processing by Staff::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0xzjzby/3Hk7KO7T9gktKlTSDeS1V86AmmGPjWdew/s="}
+Redirected to http://localhost:3000/staff
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/staff" for 10.0.2.2 at 2014-09-06 14:49:03 +0900
+Processing by Staff::TopController#index as HTML
+  Rendered staff/top/index.html.erb within layouts/staff (0.4ms)
+  Rendered staff/shared/_header.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 185ms (Views: 184.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 14:49:03 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-06 14:49:04 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-06 14:49:04 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 14:49:04 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 14:49:04 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 14:49:04 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-06 14:49:04 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 14:49:04 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 14:49:04 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 14:49:04 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 14:49:04 +0900
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-06 15:05:28 +0900
+Processing by Staff::TopController#index as HTML
+  Rendered staff/top/index.html.erb within layouts/staff (0.1ms)
+  Rendered staff/shared/_header.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 170ms (Views: 168.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 15:05:28 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 15:05:28 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-06 15:05:29 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 15:05:29 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 15:05:29 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-06 15:05:29 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-06 15:05:29 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 15:05:29 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 15:05:29 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 15:05:29 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 15:05:29 +0900
+
+
+Started GET "/foo" for 10.0.2.2 at 2014-09-06 15:05:53 +0900
+Processing by Staff::TopController#index as HTML
+  Rendered staff/top/index.html.erb within layouts/staff (0.1ms)
+  Rendered staff/shared/_header.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 173ms (Views: 172.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 15:05:54 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 15:05:54 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 15:05:54 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 15:05:54 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-06 15:05:54 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-06 15:05:54 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-06 15:05:54 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 15:05:54 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 15:05:54 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 15:05:54 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 15:05:55 +0900
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-06 15:21:32 +0900
+Processing by Admin::TopController#index as HTML
+  Rendered admin/top/index.html.erb within layouts/admin (0.6ms)
+  Rendered admin/shared/_header.html.erb (1.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 242ms (Views: 241.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 15:21:32 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 15:21:32 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 15:21:32 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-06 15:21:33 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 15:21:33 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 15:21:33 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 15:21:33 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 15:21:33 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 15:21:33 +0900
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-06 15:27:03 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::TopController#index as HTML
+  Rendered admin/top/index.html.erb within layouts/admin (6.0ms)
+  Rendered admin/shared/_header.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 389ms (Views: 350.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 15:27:04 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 15:27:05 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-06 15:27:05 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 15:27:05 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-06 15:27:05 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 15:27:05 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-06 15:27:05 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 15:27:05 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 15:27:05 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 15:27:05 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 15:27:05 +0900
+
+
+Started GET "/admin/login" for 10.0.2.2 at 2014-09-06 15:27:11 +0900
+Processing by Admin::SessionsController#new as HTML
+  Rendered admin/sessions/new.html.erb within layouts/admin (36.4ms)
+  Rendered admin/shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 248ms (Views: 235.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/session" for 10.0.2.2 at 2014-09-06 15:27:13 +0900
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0xzjzby/3Hk7KO7T9gktKlTSDeS1V86AmmGPjWdew/s=", "admin_login_form"=>{"email"=>"taro@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[35mAdministrator Load (1.3ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`email_for_index` = 'taro@example.com' LIMIT 1
+  Rendered admin/sessions/new.html.erb within layouts/admin (2.4ms)
+  Rendered admin/shared/_header.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 236ms (Views: 177.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 15:27:13 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 15:27:13 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 15:27:14 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-06 15:27:14 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-06 15:27:14 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 15:27:14 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-06 15:27:14 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 15:27:14 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 15:27:14 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 15:27:14 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 15:27:14 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-06 06:32:48', 'taro@example.com', 'taro@example.com', '山田', 'ヤマダ', '太郎', 'タロウ', '$2a$10$Fle1bEtHTQh6eFYDTFajY.SawCeMc.xVDYCKPzVZaqgRaSHuBJgRy', '2014-09-06', '2014-09-06 06:32:48')[0m
+Mysql2::Error: Duplicate entry 'taro@example.com' for key 'index_staff_members_on_email_for_index': INSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-06 06:32:48', 'taro@example.com', 'taro@example.com', '山田', 'ヤマダ', '太郎', 'タロウ', '$2a$10$Fle1bEtHTQh6eFYDTFajY.SawCeMc.xVDYCKPzVZaqgRaSHuBJgRy', '2014-09-06', '2014-09-06 06:32:48')
+  [1m[35m (17.5ms)[0m  ROLLBACK
+  [1m[36m (28.3ms)[0m  [1mDROP DATABASE IF EXISTS `baukis_development`[0m
+  [1m[35m (27.6ms)[0m  DROP DATABASE IF EXISTS `baukis_test`
+  [1m[36m (0.4ms)[0m  [1mCREATE DATABASE `baukis_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (0.2ms)[0m  CREATE DATABASE `baukis_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36m (20.9ms)[0m  [1mCREATE TABLE `administrators` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) NOT NULL, `email_for_index` varchar(255) NOT NULL, `hashed_password` varchar(255), `suspended` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (14.3ms)[0m  CREATE UNIQUE INDEX `index_administrators_on_email_for_index` USING btree ON `administrators` (`email_for_index`) 
+  [1m[36m (7.2ms)[0m  [1mCREATE TABLE `staff_members` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) NOT NULL, `email_for_index` varchar(255) NOT NULL, `family_name` varchar(255) NOT NULL, `given_name` varchar(255) NOT NULL, `family_name_kana` varchar(255) NOT NULL, `given_name_kana` varchar(255) NOT NULL, `hashed_password` varchar(255), `start_date` date NOT NULL, `end_date` date, `suspended` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (15.0ms)[0m  CREATE UNIQUE INDEX `index_staff_members_on_email_for_index` USING btree ON `staff_members` (`email_for_index`) 
+  [1m[36m (14.3ms)[0m  [1mCREATE  INDEX `index_staff_members_on_family_name_kana_and_given_name_kana` USING btree ON `staff_members` (`family_name_kana`, `given_name_kana`) [0m
+  [1m[35m (6.1ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (14.0ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) [0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (2.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20140823080749')[0m
+  [1m[35m (2.7ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20140816073951')
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-06 06:33:07', 'taro@example.com', 'taro@example.com', '山田', 'ヤマダ', '太郎', 'タロウ', '$2a$10$a0zvZppCKu9MR/bawe2b1OJ1tgY4lD7lw/uBZw3rWwGizLfdmbvM.', '2014-09-06', '2014-09-06 06:33:07')[0m
+  [1m[35m (2.7ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-06 06:33:13', 'taro@example.com', 'taro@example.com', '山田', 'ヤマダ', '太郎', 'タロウ', '$2a$10$y34B5dPoAaAXH/kYWTywVOrjHtLQxTM2uMYGMG.cjd22yNWHJdSke', '2014-09-06', '2014-09-06 06:33:13')[0m
+Mysql2::Error: Duplicate entry 'taro@example.com' for key 'index_staff_members_on_email_for_index': INSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-06 06:33:13', 'taro@example.com', 'taro@example.com', '山田', 'ヤマダ', '太郎', 'タロウ', '$2a$10$y34B5dPoAaAXH/kYWTywVOrjHtLQxTM2uMYGMG.cjd22yNWHJdSke', '2014-09-06', '2014-09-06 06:33:13')
+  [1m[35m (14.6ms)[0m  ROLLBACK
+  [1m[36m (31.2ms)[0m  [1mDROP DATABASE IF EXISTS `baukis_development`[0m
+  [1m[35m (0.8ms)[0m  DROP DATABASE IF EXISTS `baukis_test`
+  [1m[36m (0.5ms)[0m  [1mCREATE DATABASE `baukis_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (0.5ms)[0m  CREATE DATABASE `baukis_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36m (22.4ms)[0m  [1mCREATE TABLE `administrators` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) NOT NULL, `email_for_index` varchar(255) NOT NULL, `hashed_password` varchar(255), `suspended` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (14.1ms)[0m  CREATE UNIQUE INDEX `index_administrators_on_email_for_index` USING btree ON `administrators` (`email_for_index`) 
+  [1m[36m (6.7ms)[0m  [1mCREATE TABLE `staff_members` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) NOT NULL, `email_for_index` varchar(255) NOT NULL, `family_name` varchar(255) NOT NULL, `given_name` varchar(255) NOT NULL, `family_name_kana` varchar(255) NOT NULL, `given_name_kana` varchar(255) NOT NULL, `hashed_password` varchar(255), `start_date` date NOT NULL, `end_date` date, `suspended` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (14.7ms)[0m  CREATE UNIQUE INDEX `index_staff_members_on_email_for_index` USING btree ON `staff_members` (`email_for_index`) 
+  [1m[36m (15.4ms)[0m  [1mCREATE  INDEX `index_staff_members_on_family_name_kana_and_given_name_kana` USING btree ON `staff_members` (`family_name_kana`, `given_name_kana`) [0m
+  [1m[35m (6.1ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (13.3ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) [0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (2.7ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20140823080749')[0m
+  [1m[35m (2.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20140816073951')
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-06 06:33:55', 'taro@example.com', 'taro@example.com', '山田', 'ヤマダ', '太郎', 'タロウ', '$2a$10$u3ZvUB7BvJ6fNeb.y51lOuQ82YvaDlsN1.KQwTGBsGLOj5UgGI./C', '2014-09-06', '2014-09-06 06:33:55')[0m
+  [1m[35m (2.5ms)[0m  COMMIT
+  [1m[36m (20.4ms)[0m  [1mDROP DATABASE IF EXISTS `baukis_development`[0m
+  [1m[35m (0.6ms)[0m  DROP DATABASE IF EXISTS `baukis_test`
+  [1m[36m (0.5ms)[0m  [1mCREATE DATABASE `baukis_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (0.7ms)[0m  CREATE DATABASE `baukis_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36m (22.7ms)[0m  [1mCREATE TABLE `administrators` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) NOT NULL, `email_for_index` varchar(255) NOT NULL, `hashed_password` varchar(255), `suspended` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (21.1ms)[0m  CREATE UNIQUE INDEX `index_administrators_on_email_for_index` USING btree ON `administrators` (`email_for_index`) 
+  [1m[36m (6.3ms)[0m  [1mCREATE TABLE `staff_members` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) NOT NULL, `email_for_index` varchar(255) NOT NULL, `family_name` varchar(255) NOT NULL, `given_name` varchar(255) NOT NULL, `family_name_kana` varchar(255) NOT NULL, `given_name_kana` varchar(255) NOT NULL, `hashed_password` varchar(255), `start_date` date NOT NULL, `end_date` date, `suspended` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (15.0ms)[0m  CREATE UNIQUE INDEX `index_staff_members_on_email_for_index` USING btree ON `staff_members` (`email_for_index`) 
+  [1m[36m (15.4ms)[0m  [1mCREATE  INDEX `index_staff_members_on_family_name_kana_and_given_name_kana` USING btree ON `staff_members` (`family_name_kana`, `given_name_kana`) [0m
+  [1m[35m (6.1ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (13.5ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) [0m
+  [1m[35m (0.7ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (2.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20140823080749')[0m
+  [1m[35m (2.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20140816073951')
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-06 06:34:00', 'taro@example.com', 'taro@example.com', '山田', 'ヤマダ', '太郎', 'タロウ', '$2a$10$jR3wRJ5stw5IjhkzOxP0Y.cX0cpJ8FSO4j0O628No2vHA8Qbrk9Ne', '2014-09-06', '2014-09-06 06:34:00')[0m
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM `administrators`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-06 06:36:42', 'taro@example.com', 'taro@example.com', '山田', 'ヤマダ', '太郎', 'タロウ', '$2a$10$2WlkqMRV/BD9N5Z.1MwT.eGVuTj9GEo8GZThEPMPlZZc6S9KgpQhO', '2014-09-06', '2014-09-06 06:36:42')[0m
+Mysql2::Error: Duplicate entry 'taro@example.com' for key 'index_staff_members_on_email_for_index': INSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-06 06:36:42', 'taro@example.com', 'taro@example.com', '山田', 'ヤマダ', '太郎', 'タロウ', '$2a$10$2WlkqMRV/BD9N5Z.1MwT.eGVuTj9GEo8GZThEPMPlZZc6S9KgpQhO', '2014-09-06', '2014-09-06 06:36:42')
+  [1m[35m (3.1ms)[0m  ROLLBACK
+  [1m[36m (16.6ms)[0m  [1mDROP DATABASE IF EXISTS `baukis_development`[0m
+  [1m[35m (0.6ms)[0m  DROP DATABASE IF EXISTS `baukis_test`
+  [1m[36m (0.5ms)[0m  [1mCREATE DATABASE `baukis_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (0.6ms)[0m  CREATE DATABASE `baukis_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36m (21.2ms)[0m  [1mCREATE TABLE `administrators` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) NOT NULL, `email_for_index` varchar(255) NOT NULL, `hashed_password` varchar(255), `suspended` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (20.1ms)[0m  CREATE UNIQUE INDEX `index_administrators_on_email_for_index` USING btree ON `administrators` (`email_for_index`) 
+  [1m[36m (7.4ms)[0m  [1mCREATE TABLE `staff_members` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) NOT NULL, `email_for_index` varchar(255) NOT NULL, `family_name` varchar(255) NOT NULL, `given_name` varchar(255) NOT NULL, `family_name_kana` varchar(255) NOT NULL, `given_name_kana` varchar(255) NOT NULL, `hashed_password` varchar(255), `start_date` date NOT NULL, `end_date` date, `suspended` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (15.0ms)[0m  CREATE UNIQUE INDEX `index_staff_members_on_email_for_index` USING btree ON `staff_members` (`email_for_index`) 
+  [1m[36m (16.6ms)[0m  [1mCREATE  INDEX `index_staff_members_on_family_name_kana_and_given_name_kana` USING btree ON `staff_members` (`family_name_kana`, `given_name_kana`) [0m
+  [1m[35m (6.2ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (13.7ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) [0m
+  [1m[35m (0.8ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (2.6ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20140823080749')[0m
+  [1m[35m (2.7ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20140816073951')
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-06 06:37:08', 'taro@example.com', 'taro@example.com', '山田', 'ヤマダ', '太郎', 'タロウ', '$2a$10$nsoQMlBtZ5rDv7fn2PJhu.DLJ8FFjyDuayAz85nPIpSGQx3cLvsJi', '2014-09-06', '2014-09-06 06:37:08')[0m
+  [1m[35m (2.6ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM `administrators`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM `administrators`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-06 07:33:49', 'taro@example.com', 'taro@example.com', '山田', 'ヤマダ', '太郎', 'タロウ', '$2a$10$uTB7F9583RFfJ1iLJeFPdO33Ya/ANL4x/87Hk2oBVZpOFLDDFmyBO', '2014-09-06', '2014-09-06 07:33:49')[0m
+Mysql2::Error: Duplicate entry 'taro@example.com' for key 'index_staff_members_on_email_for_index': INSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-06 07:33:49', 'taro@example.com', 'taro@example.com', '山田', 'ヤマダ', '太郎', 'タロウ', '$2a$10$uTB7F9583RFfJ1iLJeFPdO33Ya/ANL4x/87Hk2oBVZpOFLDDFmyBO', '2014-09-06', '2014-09-06 07:33:49')
+  [1m[35m (14.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-06 07:35:01', 'taro@example.com', 'taro@example.com', '山田', 'ヤマダ', '太郎', 'タロウ', '$2a$10$lxeHiy.EOUKMPpj5O.695.54E2rO.Gd2WKX3cq1h2sxJFEIJPct.6', '2014-09-06', '2014-09-06 07:35:01')[0m
+Mysql2::Error: Duplicate entry 'taro@example.com' for key 'index_staff_members_on_email_for_index': INSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-06 07:35:01', 'taro@example.com', 'taro@example.com', '山田', 'ヤマダ', '太郎', 'タロウ', '$2a$10$lxeHiy.EOUKMPpj5O.695.54E2rO.Gd2WKX3cq1h2sxJFEIJPct.6', '2014-09-06', '2014-09-06 07:35:01')
+  [1m[35m (12.9ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `administrators` (`created_at`, `email`, `email_for_index`, `hashed_password`, `updated_at`) VALUES ('2014-09-06 07:38:19', 'hanako@example.com', 'hanako@example.com', '$2a$10$GMdQcIYLZjU5KsZh5G0Q1ecHAE.tTqmTSAdoDuldgdQC1Rh8x3BLa', '2014-09-06 07:38:19')[0m
+  [1m[35m (15.4ms)[0m  COMMIT
+
+
+Started POST "/admin/session" for 10.0.2.2 at 2014-09-06 16:39:07 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0xzjzby/3Hk7KO7T9gktKlTSDeS1V86AmmGPjWdew/s=", "admin_login_form"=>{"email"=>"hanako@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[35mAdministrator Load (0.8ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`email_for_index` = 'hanako@example.com' LIMIT 1
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 205ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-06 16:39:08 +0900
+Processing by Admin::TopController#index as HTML
+  [1m[36mAdministrator Load (0.7ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `first' for #<Administrator:0x007f1e010f0368>):
+  app/controllers/admin/base.rb:6:in `current_administrator'
+  app/controllers/admin/top_controller.rb:4:in `index'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.3ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-06 16:41:22 +0900
+Processing by Admin::TopController#index as HTML
+  [1m[35mAdministrator Load (0.6ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  Rendered admin/top/dashboard.html.erb within layouts/admin (0.9ms)
+  Rendered admin/shared/_header.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 397ms (Views: 360.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 16:41:22 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 16:41:22 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 16:41:22 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 16:41:23 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-06 16:41:23 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-06 16:41:23 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-06 16:41:23 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 16:41:23 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 16:41:23 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 16:41:23 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 16:41:23 +0900
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-06 16:41:26 +0900
+
+ActionController::RoutingError (uninitialized constant Admin::StaffMembersController):
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:240:in `const_get'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:240:in `block in constantize'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `each'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `inject'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `constantize'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:46:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:71:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:59:in `each'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:59:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:678:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/flash.rb:254:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/query_cache.rb:36:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/migration.rb:380:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/callbacks.rb:82:in `run_callbacks'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:38:in `call_app'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:20:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:68:in `tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:20:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/static.rb:64:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/engine.rb:514:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/application.rb:144:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.7ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (24.7ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.3ms)
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-06 16:41:26 +0900
+
+ActionController::RoutingError (uninitialized constant Admin::StaffMembersController):
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:240:in `const_get'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:240:in `block in constantize'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `each'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `inject'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/inflector/methods.rb:236:in `constantize'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:46:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:71:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:59:in `each'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/journey/router.rb:59:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/routing/route_set.rb:678:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/flash.rb:254:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/query_cache.rb:36:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/migration.rb:380:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/callbacks.rb:82:in `run_callbacks'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:38:in `call_app'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:20:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:68:in `tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:20:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/static.rb:64:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/engine.rb:514:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/application.rb:144:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.8ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-06 16:45:00 +0900
+Processing by Admin::TopController#index as HTML
+  [1m[36mAdministrator Load (0.7ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendered admin/top/dashboard.html.erb within layouts/admin (0.4ms)
+  Rendered admin/shared/_header.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 163ms (Views: 159.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 16:45:00 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 16:45:01 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 16:45:01 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-06 16:45:01 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-06 16:45:01 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 16:45:01 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-06 16:45:01 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 16:45:01 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 16:45:01 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 16:45:01 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 16:45:01 +0900
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-06 16:54:53 +0900
+Processing by Staff::TopController#index as HTML
+  Rendered staff/top/index.html.erb within layouts/staff (0.6ms)
+  Rendered staff/shared/_header.html.erb (1.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 437ms (Views: 435.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/staff/flash.css?body=1" for 10.0.2.2 at 2014-09-06 16:54:53 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 16:54:54 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 16:54:54 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 16:54:54 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-06 16:54:54 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-06 16:54:54 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 16:54:54 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-06 16:54:54 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 16:54:54 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 16:54:54 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 16:54:55 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 16:54:55 +0900
+
+
+Started GET "/login" for 10.0.2.2 at 2014-09-06 16:54:58 +0900
+Processing by Staff::SessionsController#new as HTML
+  Rendered staff/sessions/new.html.erb within layouts/staff (18.3ms)
+  Rendered staff/shared/_header.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 228ms (Views: 219.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 10.0.2.2 at 2014-09-06 16:55:00 +0900
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0xzjzby/3Hk7KO7T9gktKlTSDeS1V86AmmGPjWdew/s=", "staff_login_form"=>{"email"=>"taro@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[35mStaffMember Load (0.6ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`email_for_index` = 'taro@example.com' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 164ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-06 16:55:00 +0900
+Processing by Staff::TopController#index as HTML
+  Rendered staff/top/index.html.erb within layouts/staff (0.2ms)
+  [1m[36mStaffMember Load (0.9ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1[0m
+  Rendered staff/shared/_header.html.erb (2.8ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 183ms (Views: 181.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 16:55:01 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 16:55:01 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 16:55:01 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-06 16:55:01 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-06 16:55:01 +0900
+
+
+Started GET "/assets/staff/flash.css?body=1" for 10.0.2.2 at 2014-09-06 16:55:01 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 16:55:01 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-06 16:55:01 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 16:55:01 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 16:55:01 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 16:55:01 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 16:55:02 +0900
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-06 17:01:10 +0900
+
+NameError (undefined local variable or method `account' for #<ActionDispatch::Routing::Mapper:0x007f1e00463b90>):
+  config/routes.rb:62:in `block (2 levels) in <top (required)>'
+  config/routes.rb:56:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.7ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-06 17:01:35 +0900
+Processing by Admin::TopController#index as HTML
+  [1m[35mAdministrator Load (0.6ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  Rendered admin/top/dashboard.html.erb within layouts/admin (0.4ms)
+  Rendered admin/shared/_header.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 354ms (Views: 320.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 17:01:36 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 17:01:36 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-06 17:01:36 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-06 17:01:36 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 17:01:36 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-06 17:01:36 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 17:01:36 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-06 17:01:36 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 17:01:36 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 17:01:37 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 17:01:37 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 17:01:37 +0900
+
+
+Started DELETE "/admin/session" for 10.0.2.2 at 2014-09-06 17:01:54 +0900
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0xzjzby/3Hk7KO7T9gktKlTSDeS1V86AmmGPjWdew/s="}
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-06 17:01:54 +0900
+Processing by Admin::TopController#index as HTML
+  Rendered admin/top/index.html.erb within layouts/admin (2.2ms)
+  Rendered admin/shared/_header.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 183ms (Views: 181.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-06 17:01:54 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 17:01:54 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 17:01:54 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-06 17:01:55 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 17:01:55 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 17:01:55 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-06 17:01:55 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 17:01:55 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 17:01:55 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 17:01:55 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 17:01:55 +0900
+
+
+Started GET "/admin/login" for 10.0.2.2 at 2014-09-06 17:01:58 +0900
+Processing by Admin::SessionsController#new as HTML
+  Rendered admin/sessions/new.html.erb within layouts/admin (2.0ms)
+  Rendered admin/shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 198ms (Views: 190.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/session" for 10.0.2.2 at 2014-09-06 17:02:07 +0900
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0xzjzby/3Hk7KO7T9gktKlTSDeS1V86AmmGPjWdew/s=", "admin_login_form"=>{"email"=>"hanako@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mAdministrator Load (0.7ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`email_for_index` = 'hanako@example.com' LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 118ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-06 17:02:08 +0900
+Processing by Admin::TopController#index as HTML
+  [1m[35mAdministrator Load (0.9ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  Rendered admin/top/dashboard.html.erb within layouts/admin (0.4ms)
+  Rendered admin/shared/_header.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 185ms (Views: 182.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 17:02:08 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 17:02:08 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 17:02:08 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 17:02:08 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-06 17:02:08 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-06 17:02:08 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-06 17:02:09 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 17:02:09 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 17:02:09 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 17:02:09 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 17:02:09 +0900
+
+
+Started DELETE "/admin/session" for 10.0.2.2 at 2014-09-06 17:02:13 +0900
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0xzjzby/3Hk7KO7T9gktKlTSDeS1V86AmmGPjWdew/s="}
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-06 17:02:13 +0900
+Processing by Admin::TopController#index as HTML
+  Rendered admin/top/index.html.erb within layouts/admin (0.1ms)
+  Rendered admin/shared/_header.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 225ms (Views: 223.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 17:02:13 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-06 17:02:13 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 17:02:13 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 17:02:13 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-06 17:02:14 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 17:02:14 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-06 17:02:14 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 17:02:14 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 17:02:14 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 17:02:14 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 17:02:14 +0900
+
+
+Started GET "/staff" for 10.0.2.2 at 2014-09-06 17:02:18 +0900
+Processing by ErrorsController#routing_error as HTML
+  Parameters: {"anything"=>"staff"}
+  Rendered errors/not_found.html.erb within layouts/customer (0.6ms)
+  Rendered customer/shared/_header.html.erb (36.2ms)
+Completed 500 Internal Server Error in 291ms
+
+ActionView::Template::Error (undefined local variable or method `current_staff_member' for #<#<Class:0x007f1e15637f88>:0x007f1e15636548>):
+    1: <header>
+    2: 	<span class="logo-mark">BAUKIS</span>
+    3: 	<%=
+    4: 	if current_staff_member
+    5: 		link_to 'ログアウト', :staff_session, method: :delete
+    6: 	else
+    7: 		link_to 'ログイン', :staff_login
+  app/views/customer/shared/_header.html.erb:4:in `_app_views_customer_shared__header_html_erb___1647385376368759895_69883422872800'
+  app/views/layouts/customer.html.erb:11:in `_app_views_layouts_customer_html_erb___3858531930690479769_69883592243460'
+  app/controllers/application_controller.rb:35:in `rescue404'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-06 17:04:53 +0900
+Processing by Staff::TopController#index as HTML
+  Rendered staff/top/index.html.erb within layouts/staff (0.1ms)
+  [1m[36mStaffMember Load (0.8ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1[0m
+  Rendered staff/shared/_header.html.erb (37.9ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 233ms (Views: 228.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 17:04:53 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 17:04:53 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-06 17:04:53 +0900
+
+
+Started GET "/assets/staff/flash.css?body=1" for 10.0.2.2 at 2014-09-06 17:04:54 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 17:04:54 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-06 17:04:54 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 17:04:54 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-06 17:04:54 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 17:04:54 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 17:04:54 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 17:04:54 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 17:04:54 +0900
+
+
+Started DELETE "/session" for 10.0.2.2 at 2014-09-06 17:05:01 +0900
+Processing by Staff::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0xzjzby/3Hk7KO7T9gktKlTSDeS1V86AmmGPjWdew/s="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-06 17:05:01 +0900
+Processing by Staff::TopController#index as HTML
+  Rendered staff/top/index.html.erb within layouts/staff (0.1ms)
+  Rendered staff/shared/_header.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 171ms (Views: 170.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:02 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:02 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:02 +0900
+
+
+Started GET "/assets/staff/flash.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:02 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:02 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:02 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:02 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:02 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 17:05:03 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 17:05:03 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 17:05:03 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 17:05:03 +0900
+
+
+Started GET "/login" for 10.0.2.2 at 2014-09-06 17:05:06 +0900
+Processing by Staff::SessionsController#new as HTML
+  Rendered staff/sessions/new.html.erb within layouts/staff (1.4ms)
+  Rendered staff/shared/_header.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 197ms (Views: 190.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 10.0.2.2 at 2014-09-06 17:05:09 +0900
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0xzjzby/3Hk7KO7T9gktKlTSDeS1V86AmmGPjWdew/s=", "staff_login_form"=>{"email"=>"taro@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[35mStaffMember Load (0.6ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`email_for_index` = 'taro@example.com' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 117ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-06 17:05:09 +0900
+Processing by Staff::TopController#index as HTML
+  Rendered staff/top/index.html.erb within layouts/staff (0.1ms)
+  [1m[36mStaffMember Load (0.6ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1[0m
+  Rendered staff/shared/_header.html.erb (2.5ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 188ms (Views: 186.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/staff/flash.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:09 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:09 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:09 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:09 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:10 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:10 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:10 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:10 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 17:05:10 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 17:05:10 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 17:05:10 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 17:05:10 +0900
+
+
+Started DELETE "/session" for 10.0.2.2 at 2014-09-06 17:05:54 +0900
+Processing by Staff::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0xzjzby/3Hk7KO7T9gktKlTSDeS1V86AmmGPjWdew/s="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-06 17:05:54 +0900
+Processing by Staff::TopController#index as HTML
+  Rendered staff/top/index.html.erb within layouts/staff (0.1ms)
+  Rendered staff/shared/_header.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 174ms (Views: 173.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:55 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:55 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:55 +0900
+
+
+Started GET "/assets/staff/flash.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:55 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:55 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:55 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:55 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-06 17:05:55 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-06 17:05:56 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-06 17:05:56 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-06 17:05:56 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-06 17:05:56 +0900
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-06 17:09:49 +0900
+Processing by ErrorsController#routing_error as HTML
+  Rendered errors/not_found.html.erb within layouts/customer (0.2ms)
+  Rendered customer/shared/_header.html.erb (28.1ms)
+Completed 500 Internal Server Error in 211ms
+
+ActionView::Template::Error (undefined local variable or method `current_staff_member' for #<#<Class:0x007f1e01033d30>:0x007f1e01033358>):
+    1: <header>
+    2: 	<span class="logo-mark">BAUKIS</span>
+    3: 	<%=
+    4: 	if current_staff_member
+    5: 		link_to 'ログアウト', :staff_session, method: :delete
+    6: 	else
+    7: 		link_to 'ログイン', :staff_login
+  app/views/customer/shared/_header.html.erb:4:in `_app_views_customer_shared__header_html_erb___1647385376368759895_69883422872800'
+  app/views/layouts/customer.html.erb:11:in `_app_views_layouts_customer_html_erb___3858531930690479769_69883592243460'
+  app/controllers/application_controller.rb:35:in `rescue404'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-06 17:10:12 +0900
+Processing by ErrorsController#routing_error as HTML
+  Rendered errors/not_found.html.erb within layouts/customer (0.2ms)
+  Rendered customer/shared/_header.html.erb (34.4ms)
+Completed 500 Internal Server Error in 224ms
+
+ActionView::Template::Error (undefined local variable or method `current_staff_member' for #<#<Class:0x007f1e01033d30>:0x007f1e00c89338>):
+    1: <header>
+    2: 	<span class="logo-mark">BAUKIS</span>
+    3: 	<%=
+    4: 	if current_staff_member
+    5: 		link_to 'ログアウト', :staff_session, method: :delete
+    6: 	else
+    7: 		link_to 'ログイン', :staff_login
+  app/views/customer/shared/_header.html.erb:4:in `_app_views_customer_shared__header_html_erb___1647385376368759895_69883422872800'
+  app/views/layouts/customer.html.erb:11:in `_app_views_layouts_customer_html_erb___3858531930690479769_69883592243460'
+  app/controllers/application_controller.rb:35:in `rescue404'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-06 17:10:19 +0900
+Processing by ErrorsController#routing_error as HTML
+  Rendered errors/not_found.html.erb within layouts/customer (0.7ms)
+  Rendered customer/shared/_header.html.erb (46.1ms)
+Completed 500 Internal Server Error in 264ms
+
+ActionView::Template::Error (undefined local variable or method `current_staff_member' for #<#<Class:0x007f1e01033d30>:0x007f1e00955b30>):
+    1: <header>
+    2: 	<span class="logo-mark">BAUKIS</span>
+    3: 	<%=
+    4: 	if current_staff_member
+    5: 		link_to 'ログアウト', :staff_session, method: :delete
+    6: 	else
+    7: 		link_to 'ログイン', :staff_login
+  app/views/customer/shared/_header.html.erb:4:in `_app_views_customer_shared__header_html_erb___1647385376368759895_69883417598140'
+  app/views/layouts/customer.html.erb:11:in `_app_views_layouts_customer_html_erb___3858531930690479769_69883592243460'
+  app/controllers/application_controller.rb:35:in `rescue404'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-06 17:10:19 +0900
+Processing by ErrorsController#routing_error as HTML
+  Rendered errors/not_found.html.erb within layouts/customer (0.2ms)
+  Rendered customer/shared/_header.html.erb (44.1ms)
+Completed 500 Internal Server Error in 230ms
+
+ActionView::Template::Error (undefined local variable or method `current_staff_member' for #<#<Class:0x007f1e01033d30>:0x007f1e005dcff8>):
+    1: <header>
+    2: 	<span class="logo-mark">BAUKIS</span>
+    3: 	<%=
+    4: 	if current_staff_member
+    5: 		link_to 'ログアウト', :staff_session, method: :delete
+    6: 	else
+    7: 		link_to 'ログイン', :staff_login
+  app/views/customer/shared/_header.html.erb:4:in `_app_views_customer_shared__header_html_erb___1647385376368759895_69883422872800'
+  app/views/layouts/customer.html.erb:11:in `_app_views_layouts_customer_html_erb___3858531930690479769_69883592243460'
+  app/controllers/application_controller.rb:35:in `rescue404'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.0ms)
