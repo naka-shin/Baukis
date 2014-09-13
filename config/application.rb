@@ -32,7 +32,7 @@ module Baukis
       Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]
 
     config.i18n.default_locale = :ja
- 
+
     config.generators do |g|
       g.helper false
       g.assets false
@@ -41,7 +41,8 @@ module Baukis
       g.view_specs false
     end
 
-    config.action_controller.permit_all_parameters = true
+    # Strong Paramters無効化
+    # config.action_controller.permit_all_parameters = true
   end
 end
 
