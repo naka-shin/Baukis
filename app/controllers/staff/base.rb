@@ -14,9 +14,9 @@ class Staff::Base < ApplicationController
   helper_method :current_staff_member
 
   def authorize
-    unless current_administrator
-      flash.alert = '管理者としてログインしてください。'
-      redirect_to :admin_login
+    unless current_staff_member
+      flash.alert = '職員としてログインしてください。'
+      redirect_to :staff_login
     end
   end
 
