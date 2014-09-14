@@ -4530,3 +4530,2129 @@ Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-13 16:40:59 +
 
 
 Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-13 16:40:59 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (96.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateStaffEvents (20140914014205)
+  [1m[35m (45.7ms)[0m  CREATE TABLE `staff_events` (`id` int(11) auto_increment PRIMARY KEY, `staff_member_id` int(11) NOT NULL, `type` varchar(255) NOT NULL, `created_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (25.9ms)[0m  [1mCREATE  INDEX `index_staff_events_on_created_at`  ON `staff_events` (`created_at`) [0m
+  [1m[35m (23.9ms)[0m  CREATE  INDEX `index_staff_events_on_staff_member_id_and_created_at`  ON `staff_events` (`staff_member_id`, `created_at`) 
+  [1m[36m (27.5ms)[0m  [1mALTER TABLE `staff_events` ADD CONSTRAINT `staff_events_staff_member_id_fk` FOREIGN KEY (`staff_member_id`) REFERENCES `staff_members`(id)[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20140914014205')[0m
+  [1m[35m (4.4ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (1.2ms)[0m  
+          SELECT fk.referenced_table_name as 'to_table'
+                ,fk.referenced_column_name as 'primary_key'
+                ,fk.column_name as 'column'
+                ,fk.constraint_name as 'name'
+          FROM information_schema.key_column_usage fk
+          WHERE fk.referenced_column_name is not null
+            AND fk.table_schema = 'baukis_development'
+            AND fk.table_name = 'administrators'
+        
+  [1m[36m (0.5ms)[0m  [1mSHOW CREATE TABLE `administrators`[0m
+  [1m[35m (0.7ms)[0m  
+          SELECT fk.referenced_table_name as 'to_table'
+                ,fk.referenced_column_name as 'primary_key'
+                ,fk.column_name as 'column'
+                ,fk.constraint_name as 'name'
+          FROM information_schema.key_column_usage fk
+          WHERE fk.referenced_column_name is not null
+            AND fk.table_schema = 'baukis_development'
+            AND fk.table_name = 'staff_events'
+        
+  [1m[36m (0.3ms)[0m  [1mSHOW CREATE TABLE `staff_events`[0m
+  [1m[35m (0.8ms)[0m  
+          SELECT fk.referenced_table_name as 'to_table'
+                ,fk.referenced_column_name as 'primary_key'
+                ,fk.column_name as 'column'
+                ,fk.constraint_name as 'name'
+          FROM information_schema.key_column_usage fk
+          WHERE fk.referenced_column_name is not null
+            AND fk.table_schema = 'baukis_development'
+            AND fk.table_name = 'staff_members'
+        
+  [1m[36m (0.6ms)[0m  [1mSHOW CREATE TABLE `staff_members`[0m
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-14 11:02:21 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Staff::TopController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered staff/top/index.html.erb within layouts/staff (20.8ms)
+  Rendered staff/shared/_header.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 778ms (Views: 737.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:22 +0900
+
+
+Started GET "/assets/staff/flash.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:23 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:23 +0900
+
+
+Started GET "/assets/staff/form.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:23 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:23 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:23 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:24 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:24 +0900
+
+
+Started GET "/assets/staff/tables.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:24 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:24 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-14 11:02:24 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-14 11:02:24 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 11:02:25 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 11:02:25 +0900
+
+
+Started GET "/login" for 10.0.2.2 at 2014-09-14 11:02:29 +0900
+Processing by Staff::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered staff/sessions/new.html.erb within layouts/staff (68.0ms)
+  Rendered staff/shared/_header.html.erb (2.6ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 461ms (Views: 429.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 10.0.2.2 at 2014-09-14 11:02:38 +0900
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7niuc2bLkBcZ2vrPDfaluCldlsSWNNc03EMtFg2XnwA=", "staff_login_form"=>{"email"=>"taro@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis.example.com"}
+  [1m[35mStaffMember Load (1.3ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`email_for_index` = 'taro@example.com' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-14 02:02:38', 1, 'logged_in')
+  [1m[36m (14.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://baukis.example.com:3000/
+Completed 302 Found in 406ms (ActiveRecord: 25.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-14 11:02:38 +0900
+Processing by Staff::TopController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mStaffMember Load (1.7ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1
+  Rendered staff/top/index.html.erb within layouts/staff (0.2ms)
+  Rendered staff/shared/_header.html.erb (4.8ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 335ms (Views: 327.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:39 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:39 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:39 +0900
+
+
+Started GET "/assets/staff/form.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:39 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:39 +0900
+
+
+Started GET "/assets/staff/flash.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:39 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:40 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:40 +0900
+
+
+Started GET "/assets/staff/tables.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:40 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-14 11:02:40 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-14 11:02:40 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-14 11:02:40 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 11:02:40 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 11:02:41 +0900
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-14 11:05:34 +0900
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered admin/top/index.html.erb within layouts/admin (1.0ms)
+  Rendered admin/shared/_header.html.erb (2.5ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 433ms (Views: 431.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:34 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:34 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:35 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:35 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:35 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:35 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:35 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:35 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:36 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:36 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-14 11:05:36 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-14 11:05:36 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 11:05:36 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 11:05:36 +0900
+
+
+Started GET "/admin/login" for 10.0.2.2 at 2014-09-14 11:05:38 +0900
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered admin/sessions/new.html.erb within layouts/admin (4.7ms)
+  Rendered admin/shared/_header.html.erb (5.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 352ms (Views: 330.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/session" for 10.0.2.2 at 2014-09-14 11:05:48 +0900
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7niuc2bLkBcZ2vrPDfaluCldlsSWNNc03EMtFg2XnwA=", "admin_login_form"=>{"email"=>"hanako@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (1.4ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`email_for_index` = 'hanako@example.com' LIMIT 1[0m
+Redirected to http://baukis.example.com:3000/admin
+Completed 302 Found in 177ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-14 11:05:49 +0900
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (1.6ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  Rendered admin/top/dashboard.html.erb within layouts/admin (2.5ms)
+  Rendered admin/shared/_header.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 295ms (Views: 289.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:49 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:49 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:49 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:50 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:50 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:50 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:50 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:50 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:50 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-14 11:05:50 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-14 11:05:51 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-14 11:05:51 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 11:05:51 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 11:05:51 +0900
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-14 11:05:53 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (3.7ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35mStaffMember Load (1.6ms)[0m  SELECT `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC
+  Rendered admin/staff_members/index.html.erb within layouts/admin (59.6ms)
+  Rendered admin/shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 371ms (Views: 361.7ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/admin/staff_events" for 10.0.2.2 at 2014-09-14 11:13:45 +0900
+Processing by Admin::StaffEventsController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (2.5ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35mStaffEvent Load (1.4ms)[0m  SELECT `staff_events`.* FROM `staff_events`   ORDER BY `staff_events`.`created_at` DESC
+  [1m[36mStaffMember Load (0.8ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1[0m
+  Rendered admin/staff_events/_event.html.erb (98.7ms)
+  Rendered admin/staff_events/index.html.erb within layouts/admin (155.4ms)
+  Rendered admin/shared/_header.html.erb (5.3ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 560ms (Views: 452.0ms | ActiveRecord: 17.4ms)
+  [1m[36m (94.8ms)[0m  [1mDROP DATABASE IF EXISTS `baukis_development`[0m
+  [1m[35m (25.0ms)[0m  DROP DATABASE IF EXISTS `baukis_test`
+  [1m[36m (1.1ms)[0m  [1mCREATE DATABASE `baukis_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (0.6ms)[0m  CREATE DATABASE `baukis_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36m (27.8ms)[0m  [1mCREATE TABLE `administrators` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) NOT NULL, `email_for_index` varchar(255) NOT NULL, `hashed_password` varchar(255), `suspended` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (31.9ms)[0m  CREATE UNIQUE INDEX `index_administrators_on_email_for_index` USING btree ON `administrators` (`email_for_index`) 
+  [1m[36m (17.2ms)[0m  [1mCREATE TABLE `staff_events` (`id` int(11) auto_increment PRIMARY KEY, `staff_member_id` int(11) NOT NULL, `type` varchar(255) NOT NULL, `created_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (21.6ms)[0m  CREATE  INDEX `index_staff_events_on_created_at` USING btree ON `staff_events` (`created_at`) 
+  [1m[36m (37.5ms)[0m  [1mCREATE  INDEX `index_staff_events_on_staff_member_id_and_created_at` USING btree ON `staff_events` (`staff_member_id`, `created_at`) [0m
+  [1m[35m (15.4ms)[0m  CREATE TABLE `staff_members` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) NOT NULL, `email_for_index` varchar(255) NOT NULL, `family_name` varchar(255) NOT NULL, `given_name` varchar(255) NOT NULL, `family_name_kana` varchar(255) NOT NULL, `given_name_kana` varchar(255) NOT NULL, `hashed_password` varchar(255), `start_date` date NOT NULL, `end_date` date, `suspended` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (28.2ms)[0m  [1mCREATE UNIQUE INDEX `index_staff_members_on_email_for_index` USING btree ON `staff_members` (`email_for_index`) [0m
+  [1m[35m (34.3ms)[0m  CREATE  INDEX `index_staff_members_on_family_name_kana_and_given_name_kana` USING btree ON `staff_members` (`family_name_kana`, `given_name_kana`) 
+  [1m[36m (28.5ms)[0m  [1mALTER TABLE `staff_events` ADD CONSTRAINT `staff_events_staff_member_id_fk` FOREIGN KEY (`staff_member_id`) REFERENCES `staff_members`(id)[0m
+  [1m[35m (10.2ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (20.8ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) [0m
+  [1m[35m (1.0ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (4.1ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20140914014205')[0m
+  [1m[35m (4.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20140823080749')
+  [1m[36m (7.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20140816073951')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.9ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:02', 'taro@example.com', 'taro@example.com', '山田', 'ヤマダ', '太郎', 'タロウ', '$2a$10$yKomom9dmX3QrEl2ocLdx.O/bWj3alPsOnzxgKt31.5W6s5DrZ7mW', '2014-09-14', '2014-09-14 12:09:02')
+  [1m[36m (5.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `end_date`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:02', 'sato.jiro@example.com', 'sato.jiro@example.com', '2014-09-14', '佐藤', 'サトウ', '二郎', 'ジロウ', '$2a$10$XpBj9iB4yinqtWJTP8QBmOJbxZQzPiOa9xVS5gGtVA2ALHA9Kuu8u', '2014-06-06', '2014-09-14 12:09:02')[0m
+  [1m[35m (4.5ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `suspended`, `updated_at`) VALUES ('2014-09-14 12:09:02', 'suzuki.saburo@example.com', 'suzuki.saburo@example.com', '鈴木', 'スズキ', '三郎', 'サブロウ', '$2a$10$JXdNV59zVl5QhaW1kUkv5uLTCenvEQrgefQQigSNokcYY8h/vX6c.', '2014-06-07', 1, '2014-09-14 12:09:02')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (9.3ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:03', 'takahashi.matsuko@example.com', 'takahashi.matsuko@example.com', '髙橋', 'タカハシ', '松子', 'マツコ', '$2a$10$DxNftqRYQRDzC8bv3VW93eJAHa9sTXuywjJ1a2.72gE8gRIYk7i6u', '2014-06-08', '2014-09-14 12:09:03')[0m
+  [1m[35m (15.5ms)[0m  COMMIT
+  [1m[36m (9.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:03', 'tanaka.takeko@example.com', 'tanaka.takeko@example.com', '田中', 'タナカ', '竹子', 'タケコ', '$2a$10$imok84UHoCqK.Ok3E42EY.ox5At2.9V5mf/TT2EdDewxMMKHQJrxu', '2014-06-09', '2014-09-14 12:09:03')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (33.6ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:03', 'sato.umeko@example.com', 'sato.umeko@example.com', '佐藤', 'サトウ', '梅子', 'ウメコ', '$2a$10$GuWp5VNwtz6lNX5bjaoey.icA8HrVQ8DErKqcPTliLNrken1jinIi', '2014-06-10', '2014-09-14 12:09:03')[0m
+  [1m[35m (3.6ms)[0m  COMMIT
+  [1m[36m (8.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:03', 'suzuki.jiro@example.com', 'suzuki.jiro@example.com', '鈴木', 'スズキ', '二郎', 'ジロウ', '$2a$10$qKaRRoyv6sPMLpJkecpCKueY9z6BCJwmkkKFkRS2Lm0qDqIhqcEQa', '2014-06-11', '2014-09-14 12:09:03')
+  [1m[36m (30.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (4.6ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:03', 'takahashi.saburo@example.com', 'takahashi.saburo@example.com', '髙橋', 'タカハシ', '三郎', 'サブロウ', '$2a$10$R9eInOFI/bqhlXuAb9Y/XesFKVMzC2LJXwngq7E6rNM8U03nD5SoG', '2014-06-12', '2014-09-14 12:09:03')[0m
+  [1m[35m (4.5ms)[0m  COMMIT
+  [1m[36m (9.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:03', 'tanaka.matsuko@example.com', 'tanaka.matsuko@example.com', '田中', 'タナカ', '松子', 'マツコ', '$2a$10$HvVCktXCVsquHUZ936x/L.dOuU3BUO2CzlsnXFL9HvnoNoyx.aMKS', '2014-06-13', '2014-09-14 12:09:03')
+  [1m[36m (3.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:03', 'sato.takeko@example.com', 'sato.takeko@example.com', '佐藤', 'サトウ', '竹子', 'タケコ', '$2a$10$iqma.D3TAhpuWeNeN8Dr/O6rI8OGvRBDD6AhK3Q5F4q2URxCE0n.e', '2014-06-14', '2014-09-14 12:09:03')[0m
+  [1m[35m (4.2ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:03', 'suzuki.umeko@example.com', 'suzuki.umeko@example.com', '鈴木', 'スズキ', '梅子', 'ウメコ', '$2a$10$J0TZSan/8IPETOI2AYffaugo5aZFuMKfeuZ61AF1NViGpy/N4qjTa', '2014-06-15', '2014-09-14 12:09:03')
+  [1m[36m (3.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:04', 'takahashi.jiro@example.com', 'takahashi.jiro@example.com', '髙橋', 'タカハシ', '二郎', 'ジロウ', '$2a$10$jBjL7NoamKbtYpeoqfKDuOReIu/Duhqer6JJqIKYDSDvY3XiALn4e', '2014-06-16', '2014-09-14 12:09:04')[0m
+  [1m[35m (3.6ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:04', 'tanaka.saburo@example.com', 'tanaka.saburo@example.com', '田中', 'タナカ', '三郎', 'サブロウ', '$2a$10$EzUTxLUSvbDSQJOEqYq1xOgpr11Cu3T9bQyDA0oTdCPqjFrzFh.ha', '2014-06-17', '2014-09-14 12:09:04')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:04', 'sato.matsuko@example.com', 'sato.matsuko@example.com', '佐藤', 'サトウ', '松子', 'マツコ', '$2a$10$HoH2.0f7aC/ITE0FZLn.0espNrchomWCp9MoD/kXg3oB8FnaXoY7.', '2014-06-18', '2014-09-14 12:09:04')[0m
+  [1m[35m (3.7ms)[0m  COMMIT
+  [1m[36m (8.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:04', 'suzuki.takeko@example.com', 'suzuki.takeko@example.com', '鈴木', 'スズキ', '竹子', 'タケコ', '$2a$10$HZAeDLs87G.ZpbXdSwDyveNY6Tuu/iAcEhoMD5R.72v9jCzUol72S', '2014-06-19', '2014-09-14 12:09:04')
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:04', 'takahashi.umeko@example.com', 'takahashi.umeko@example.com', '髙橋', 'タカハシ', '梅子', 'ウメコ', '$2a$10$eGZjtApLmGRMJDtiaS1ypO1A3mQ.UcWr7Zn7uw1s6SQIgME3cU4bi', '2014-06-20', '2014-09-14 12:09:04')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:04', 'tanaka.jiro@example.com', 'tanaka.jiro@example.com', '田中', 'タナカ', '二郎', 'ジロウ', '$2a$10$8r74nHigdRP2QiuXFBg2.egorYejft6uHCWj4Fftr9w7P765Uk16W', '2014-06-21', '2014-09-14 12:09:04')
+  [1m[36m (3.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:04', 'sato.saburo@example.com', 'sato.saburo@example.com', '佐藤', 'サトウ', '三郎', 'サブロウ', '$2a$10$klG6oAsobka3fdwxWFSmtOPK6eBMFCusrWGElxzOsdSWAbc8nB2Va', '2014-06-22', '2014-09-14 12:09:04')[0m
+  [1m[35m (3.6ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:04', 'suzuki.matsuko@example.com', 'suzuki.matsuko@example.com', '鈴木', 'スズキ', '松子', 'マツコ', '$2a$10$iyggmtKLo/dy5CMgkETmv.gfEcu3yfAGZQRLExgnLot2EdADDvk3W', '2014-06-23', '2014-09-14 12:09:04')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:04', 'takahashi.takeko@example.com', 'takahashi.takeko@example.com', '髙橋', 'タカハシ', '竹子', 'タケコ', '$2a$10$hpBryo4VR0G7keZ9026CruxdZHyTI8dDej8scMwNdzm2YfzL7NWcC', '2014-06-24', '2014-09-14 12:09:04')[0m
+  [1m[35m (4.4ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_members` (`created_at`, `email`, `email_for_index`, `family_name`, `family_name_kana`, `given_name`, `given_name_kana`, `hashed_password`, `start_date`, `updated_at`) VALUES ('2014-09-14 12:09:05', 'tanaka.umeko@example.com', 'tanaka.umeko@example.com', '田中', 'タナカ', '梅子', 'ウメコ', '$2a$10$rixXPESU.GchtmCuS77Z3u/dDxBkKo3Bl9Kv4LAi8FOVA3ALnEvPC', '2014-06-25', '2014-09-14 12:09:05')
+  [1m[36m (3.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `administrators` (`created_at`, `email`, `email_for_index`, `hashed_password`, `updated_at`) VALUES ('2014-09-14 12:09:05', 'hanako@example.com', 'hanako@example.com', '$2a$10$stmKi05jama9LkbFgFh2uu4nzSOE2jsmvLHw8PEJLx2NDp6FnSPda', '2014-09-14 12:09:05')[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36mStaffMember Load (0.9ms)[0m  [1mSELECT `staff_members`.* FROM `staff_members`[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-03 20:09:05', 5, 'logged_in')[0m
+  [1m[35m (5.0ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-03 21:09:05', 9, 'logged_out')
+  [1m[36m (3.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-03 22:09:05', 7, 'logged_in')[0m
+  [1m[35m (4.6ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-03 23:09:05', 13, 'logged_out')
+  [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 00:09:05', 3, 'rejected')[0m
+  [1m[35m (3.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 01:09:05', 7, 'logged_out')
+  [1m[36m (3.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 02:09:05', 9, 'logged_in')[0m
+  [1m[35m (3.4ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 03:09:05', 13, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 04:09:05', 20, 'logged_in')[0m
+  [1m[35m (3.6ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 05:09:05', 4, 'logged_out')
+  [1m[36m (3.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 06:09:05', 8, 'logged_in')[0m
+  [1m[35m (3.4ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 07:09:05', 14, 'logged_out')
+  [1m[36m (4.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 08:09:05', 8, 'logged_in')[0m
+  [1m[35m (3.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 09:09:05', 12, 'logged_out')
+  [1m[36m (3.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 10:09:05', 16, 'logged_in')[0m
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 11:09:05', 15, 'logged_out')
+  [1m[36m (3.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 12:09:05', 20, 'logged_in')[0m
+  [1m[35m (3.1ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 13:09:05', 18, 'logged_out')
+  [1m[36m (4.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 14:09:05', 15, 'logged_in')[0m
+  [1m[35m (3.6ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 15:09:05', 11, 'logged_out')
+  [1m[36m (3.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 16:09:05', 17, 'logged_in')[0m
+  [1m[35m (3.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 17:09:05', 16, 'logged_out')
+  [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 18:09:05', 5, 'logged_in')[0m
+  [1m[35m (3.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 19:09:05', 19, 'logged_out')
+  [1m[36m (4.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 20:09:05', 6, 'logged_in')[0m
+  [1m[35m (3.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 21:09:05', 18, 'logged_out')
+  [1m[36m (3.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 22:09:05', 7, 'logged_in')[0m
+  [1m[35m (3.4ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-04 23:09:05', 18, 'logged_out')
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 00:09:05', 14, 'logged_in')[0m
+  [1m[35m (3.5ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 01:09:05', 11, 'logged_out')
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 02:09:05', 1, 'logged_in')[0m
+  [1m[35m (4.2ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 03:09:05', 20, 'logged_out')
+  [1m[36m (2557.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (5.3ms)[0m  BEGIN
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 04:09:08', 14, 'logged_in')[0m
+  [1m[35m (5.5ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 05:09:08', 9, 'logged_out')
+  [1m[36m (4.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 06:09:08', 1, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 07:09:08', 1, 'logged_out')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 08:09:08', 17, 'logged_in')[0m
+  [1m[35m (4.2ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 09:09:08', 5, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 10:09:08', 9, 'logged_in')[0m
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 11:09:08', 18, 'logged_out')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 12:09:08', 13, 'logged_in')[0m
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 13:09:08', 15, 'logged_out')
+  [1m[36m (4.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (2.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 14:09:08', 9, 'logged_in')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 15:09:08', 6, 'logged_out')
+  [1m[36m (4.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 16:09:08', 1, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 17:09:08', 20, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 18:09:08', 10, 'logged_in')[0m
+  [1m[35m (4.3ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 19:09:08', 8, 'logged_out')
+  [1m[36m (4.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 20:09:08', 6, 'logged_in')[0m
+  [1m[35m (4.4ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 21:09:08', 1, 'logged_out')
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 22:09:08', 21, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-05 23:09:08', 6, 'logged_out')
+  [1m[36m (4.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 00:09:08', 16, 'logged_in')[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36m (1.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 01:09:08', 5, 'logged_out')
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 02:09:08', 9, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 03:09:08', 19, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 04:09:08', 18, 'logged_in')[0m
+  [1m[35m (8.8ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 05:09:08', 7, 'logged_out')
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 06:09:08', 13, 'logged_in')[0m
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 07:09:08', 12, 'logged_out')
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 08:09:08', 2, 'rejected')[0m
+  [1m[35m (3.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 09:09:08', 15, 'logged_out')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 10:09:08', 6, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 11:09:08', 13, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 12:09:08', 1, 'logged_in')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36m (1.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 13:09:08', 13, 'logged_out')
+  [1m[36m (4.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (6.4ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 14:09:08', 13, 'logged_in')[0m
+  [1m[35m (10.0ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 15:09:08', 18, 'logged_out')
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 16:09:08', 15, 'logged_in')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 17:09:08', 16, 'logged_out')
+  [1m[36m (4.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 18:09:08', 9, 'logged_in')[0m
+  [1m[35m (5.2ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 19:09:08', 19, 'logged_out')
+  [1m[36m (4.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 20:09:08', 17, 'logged_in')[0m
+  [1m[35m (4.6ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 21:09:08', 18, 'logged_out')
+  [1m[36m (3.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 22:09:08', 7, 'logged_in')[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-06 23:09:08', 5, 'logged_out')
+  [1m[36m (4.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 00:09:08', 20, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 01:09:08', 13, 'logged_out')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 02:09:08', 9, 'logged_in')[0m
+  [1m[35m (3.7ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 03:09:08', 7, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 04:09:08', 21, 'logged_in')[0m
+  [1m[35m (6.6ms)[0m  COMMIT
+  [1m[36m (1.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 05:09:08', 9, 'logged_out')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 06:09:08', 21, 'logged_in')[0m
+  [1m[35m (4.8ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 07:09:08', 2, 'rejected')
+  [1m[36m (5.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 08:09:08', 6, 'logged_in')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 09:09:08', 16, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 10:09:08', 19, 'logged_in')[0m
+  [1m[35m (4.3ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 11:09:08', 18, 'logged_out')
+  [1m[36m (3.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 12:09:08', 6, 'logged_in')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 13:09:08', 15, 'logged_out')
+  [1m[36m (3.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 14:09:08', 13, 'logged_in')[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 15:09:08', 10, 'logged_out')
+  [1m[36m (4.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 16:09:08', 18, 'logged_in')[0m
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 17:09:08', 21, 'logged_out')
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 18:09:08', 2, 'rejected')[0m
+  [1m[35m (4.5ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 19:09:08', 15, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 20:09:08', 8, 'logged_in')[0m
+  [1m[35m (4.6ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 21:09:08', 10, 'logged_out')
+  [1m[36m (4.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 22:09:08', 3, 'rejected')[0m
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-07 23:09:08', 2, 'rejected')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 00:09:08', 1, 'logged_in')[0m
+  [1m[35m (4.2ms)[0m  COMMIT
+  [1m[36m (2.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 01:09:08', 17, 'logged_out')
+  [1m[36m (5.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 02:09:08', 2, 'rejected')[0m
+  [1m[35m (3.6ms)[0m  COMMIT
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 03:09:08', 8, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 04:09:08', 8, 'logged_in')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 05:09:08', 11, 'logged_out')
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 06:09:08', 6, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 07:09:08', 19, 'logged_out')
+  [1m[36m (3.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (3.8ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 08:09:08', 11, 'logged_in')[0m
+  [1m[35m (4.3ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 09:09:08', 14, 'logged_out')
+  [1m[36m (4.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 10:09:08', 20, 'logged_in')[0m
+  [1m[35m (5.5ms)[0m  COMMIT
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 11:09:08', 10, 'logged_out')
+  [1m[36m (4.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 12:09:08', 20, 'logged_in')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 13:09:08', 2, 'rejected')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 14:09:08', 13, 'logged_in')[0m
+  [1m[35m (4.3ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 15:09:08', 1, 'logged_out')
+  [1m[36m (4.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 16:09:08', 2, 'rejected')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 17:09:08', 5, 'logged_out')
+  [1m[36m (3.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 18:09:08', 10, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 19:09:08', 17, 'logged_out')
+  [1m[36m (3.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 20:09:08', 19, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 21:09:08', 11, 'logged_out')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 22:09:08', 17, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-08 23:09:08', 6, 'logged_out')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 00:09:08', 4, 'logged_in')[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 01:09:08', 16, 'logged_out')
+  [1m[36m (4.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 02:09:08', 3, 'rejected')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 03:09:08', 7, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 04:09:08', 14, 'logged_in')[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 05:09:08', 5, 'logged_out')
+  [1m[36m (4.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 06:09:08', 5, 'logged_in')[0m
+  [1m[35m (8.9ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 07:09:08', 16, 'logged_out')
+  [1m[36m (3.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 08:09:08', 14, 'logged_in')[0m
+  [1m[35m (3.7ms)[0m  COMMIT
+  [1m[36m (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 09:09:08', 10, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 10:09:08', 18, 'logged_in')[0m
+  [1m[35m (3.6ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 11:09:08', 14, 'logged_out')
+  [1m[36m (4.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 12:09:08', 1, 'logged_in')[0m
+  [1m[35m (5.8ms)[0m  COMMIT
+  [1m[36m (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 13:09:08', 19, 'logged_out')
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 14:09:08', 11, 'logged_in')[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 15:09:08', 3, 'rejected')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 16:09:08', 9, 'logged_in')[0m
+  [1m[35m (4.5ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 17:09:08', 15, 'logged_out')
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 18:09:09', 1, 'logged_in')[0m
+  [1m[35m (3.6ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 19:09:09', 3, 'rejected')
+  [1m[36m (5.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 20:09:09', 18, 'logged_in')[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 21:09:09', 14, 'logged_out')
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 22:09:09', 9, 'logged_in')[0m
+  [1m[35m (3.7ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-09 23:09:09', 13, 'logged_out')
+  [1m[36m (4.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 00:09:09', 14, 'logged_in')[0m
+  [1m[35m (3.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 01:09:09', 17, 'logged_out')
+  [1m[36m (4.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 02:09:09', 9, 'logged_in')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 03:09:09', 5, 'logged_out')
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 04:09:09', 8, 'logged_in')[0m
+  [1m[35m (3.7ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 05:09:09', 8, 'logged_out')
+  [1m[36m (3.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 06:09:09', 18, 'logged_in')[0m
+  [1m[35m (8.1ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 07:09:09', 6, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 08:09:09', 15, 'logged_in')[0m
+  [1m[35m (4.3ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 09:09:09', 17, 'logged_out')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 10:09:09', 20, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 11:09:09', 2, 'rejected')
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 12:09:09', 10, 'logged_in')[0m
+  [1m[35m (3.7ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 13:09:09', 17, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.7ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 14:09:09', 18, 'logged_in')[0m
+  [1m[35m (4.2ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 15:09:09', 15, 'logged_out')
+  [1m[36m (3.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 16:09:09', 4, 'logged_in')[0m
+  [1m[35m (4.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 17:09:09', 3, 'rejected')
+  [1m[36m (3.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 18:09:09', 10, 'logged_in')[0m
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 19:09:09', 6, 'logged_out')
+  [1m[36m (4.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 20:09:09', 1, 'logged_in')[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 21:09:09', 15, 'logged_out')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 22:09:09', 4, 'logged_in')[0m
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-10 23:09:09', 13, 'logged_out')
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36mSQL (6.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 00:09:09', 8, 'logged_in')[0m
+  [1m[35m (4.3ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 01:09:09', 2, 'rejected')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 02:09:09', 5, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 03:09:09', 4, 'logged_out')
+  [1m[36m (4.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 04:09:09', 21, 'logged_in')[0m
+  [1m[35m (3.6ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 05:09:09', 4, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 06:09:09', 10, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 07:09:09', 6, 'logged_out')
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 08:09:09', 15, 'logged_in')[0m
+  [1m[35m (5.8ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 09:09:09', 17, 'logged_out')
+  [1m[36m (4.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 10:09:09', 18, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 11:09:09', 19, 'logged_out')
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 12:09:09', 20, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.4ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 13:09:09', 20, 'logged_out')
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (5.4ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 14:09:09', 4, 'logged_in')[0m
+  [1m[35m (9.6ms)[0m  COMMIT
+  [1m[36m (1.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 15:09:09', 16, 'logged_out')
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 16:09:09', 13, 'logged_in')[0m
+  [1m[35m (3.4ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 17:09:09', 13, 'logged_out')
+  [1m[36m (8.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (3.4ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 18:09:09', 4, 'logged_in')[0m
+  [1m[35m (4.2ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 19:09:09', 6, 'logged_out')
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 20:09:09', 14, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 21:09:09', 13, 'logged_out')
+  [1m[36m (12.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 22:09:09', 1, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (2.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-11 23:09:09', 8, 'logged_out')
+  [1m[36m (17.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 00:09:09', 10, 'logged_in')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 01:09:09', 6, 'logged_out')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 02:09:09', 10, 'logged_in')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 03:09:09', 4, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 04:09:09', 10, 'logged_in')[0m
+  [1m[35m (4.4ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 05:09:09', 20, 'logged_out')
+  [1m[36m (4.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 06:09:09', 4, 'logged_in')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 07:09:09', 2, 'rejected')
+  [1m[36m (5.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 08:09:09', 16, 'logged_in')[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 09:09:09', 7, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 10:09:09', 17, 'logged_in')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 11:09:09', 6, 'logged_out')
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 12:09:09', 19, 'logged_in')[0m
+  [1m[35m (3.7ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 13:09:09', 4, 'logged_out')
+  [1m[36m (9.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (5.3ms)[0m  BEGIN
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 14:09:09', 6, 'logged_in')[0m
+  [1m[35m (19.3ms)[0m  COMMIT
+  [1m[36m (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 15:09:09', 8, 'logged_out')
+  [1m[36m (5.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 16:09:09', 12, 'logged_in')[0m
+  [1m[35m (7.7ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 17:09:09', 14, 'logged_out')
+  [1m[36m (4.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 18:09:09', 12, 'logged_in')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 19:09:09', 3, 'rejected')
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 20:09:09', 12, 'logged_in')[0m
+  [1m[35m (3.6ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 21:09:09', 19, 'logged_out')
+  [1m[36m (4.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 22:09:09', 11, 'logged_in')[0m
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-12 23:09:09', 14, 'logged_out')
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.9ms)[0m  BEGIN
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 00:09:09', 17, 'logged_in')[0m
+  [1m[35m (14.1ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 01:09:09', 12, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 02:09:09', 9, 'logged_in')[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 03:09:09', 19, 'logged_out')
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 04:09:09', 2, 'rejected')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 05:09:09', 16, 'logged_out')
+  [1m[36m (3.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.7ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 06:09:09', 2, 'rejected')[0m
+  [1m[35m (4.6ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 07:09:09', 11, 'logged_out')
+  [1m[36m (3.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 08:09:09', 18, 'logged_in')[0m
+  [1m[35m (6.6ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 09:09:09', 21, 'logged_out')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 10:09:09', 10, 'logged_in')[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 11:09:09', 13, 'logged_out')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 12:09:09', 6, 'logged_in')[0m
+  [1m[35m (3.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 13:09:09', 14, 'logged_out')
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 14:09:09', 4, 'logged_in')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 15:09:09', 15, 'logged_out')
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 16:09:09', 11, 'logged_in')[0m
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 17:09:09', 8, 'logged_out')
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 18:09:09', 8, 'logged_in')[0m
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 19:09:09', 13, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 20:09:09', 13, 'logged_in')[0m
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 21:09:09', 4, 'logged_out')
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 22:09:09', 16, 'logged_in')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-13 23:09:09', 6, 'logged_out')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-14 00:09:09', 11, 'logged_in')[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-14 01:09:09', 11, 'logged_out')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (2.0ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-14 02:09:09', 5, 'logged_in')[0m
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-14 03:09:09', 4, 'logged_out')
+  [1m[36m (3.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-14 04:09:09', 7, 'logged_in')[0m
+  [1m[35m (4.2ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-14 05:09:09', 16, 'logged_out')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-14 06:09:09', 6, 'logged_in')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-14 07:09:09', 7, 'logged_out')
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-14 08:09:10', 10, 'logged_in')[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-14 09:09:10', 6, 'logged_out')
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-14 10:09:10', 15, 'logged_in')[0m
+  [1m[35m (4.9ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-14 11:09:10', 16, 'logged_out')
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-14 21:19:38 +0900
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered admin/top/index.html.erb within layouts/admin (0.2ms)
+  Rendered admin/shared/_header.html.erb (2.0ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 388ms (Views: 387.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:38 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:39 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:39 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:39 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:39 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:39 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:39 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:39 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:40 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:40 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-14 21:19:40 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-14 21:19:40 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 21:19:40 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 21:19:40 +0900
+
+
+Started GET "/admin/login" for 10.0.2.2 at 2014-09-14 21:19:42 +0900
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered admin/sessions/new.html.erb within layouts/admin (3.3ms)
+  Rendered admin/shared/_header.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 362ms (Views: 327.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/session" for 10.0.2.2 at 2014-09-14 21:19:54 +0900
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9V3I8vKNCefhf+hyG8u6NDKYjehT/1K+PGnrjKw4VUg=", "admin_login_form"=>{"email"=>"hanako@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (2.5ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`email_for_index` = 'hanako@example.com' LIMIT 1
+Redirected to http://baukis.example.com:3000/admin
+Completed 302 Found in 179ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-14 21:19:54 +0900
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (1.1ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendered admin/top/dashboard.html.erb within layouts/admin (1.5ms)
+  Rendered admin/shared/_header.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 277ms (Views: 271.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:55 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:55 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:55 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:55 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:56 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:56 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:56 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:56 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:56 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-14 21:19:56 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-14 21:19:57 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-14 21:19:57 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 21:19:57 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 21:19:57 +0900
+
+
+Started GET "/admin/staff_events" for 10.0.2.2 at 2014-09-14 21:24:13 +0900
+Processing by Admin::StaffEventsController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (1.9ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  Rendered errors/internal_server_error.html.erb within layouts/admin (0.7ms)
+  Rendered admin/shared/_header.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 500 Internal Server Error in 375ms (Views: 320.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/staff_events" for 10.0.2.2 at 2014-09-14 21:24:14 +0900
+Processing by Admin::StaffEventsController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (1.3ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendered errors/internal_server_error.html.erb within layouts/admin (1.2ms)
+  Rendered admin/shared/_header.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 500 Internal Server Error in 294ms (Views: 288.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-14 21:24:14 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-14 21:24:14 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-14 21:24:15 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-14 21:24:15 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-14 21:24:15 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-14 21:24:15 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-14 21:24:15 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-14 21:24:15 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-14 21:24:15 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-14 21:24:16 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-14 21:24:16 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-14 21:24:16 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 21:24:16 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 21:24:16 +0900
+
+
+Started GET "/admin/staff_events" for 10.0.2.2 at 2014-09-14 21:25:45 +0900
+Processing by Admin::StaffEventsController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (1.3ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  Rendered errors/internal_server_error.html.erb within layouts/admin (0.1ms)
+  Rendered admin/shared/_header.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 500 Internal Server Error in 341ms (Views: 262.9ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-14 21:25:46 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-14 21:25:46 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-14 21:25:46 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-14 21:25:46 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-14 21:25:46 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-14 21:25:47 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-14 21:25:47 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-14 21:25:47 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-14 21:25:47 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-14 21:25:47 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-14 21:25:47 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-14 21:25:47 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 21:25:48 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 21:25:48 +0900
+
+
+Started DELETE "/admin/session" for 10.0.2.2 at 2014-09-14 21:26:05 +0900
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9V3I8vKNCefhf+hyG8u6NDKYjehT/1K+PGnrjKw4VUg=", "host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (1.5ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+Redirected to http://baukis.example.com:3000/admin
+Completed 302 Found in 9ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-14 21:26:06 +0900
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered admin/top/index.html.erb within layouts/admin (0.2ms)
+  Rendered admin/shared/_header.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 275ms (Views: 273.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:06 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:06 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:06 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:07 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:07 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:07 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:07 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:07 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:07 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:07 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-14 21:26:08 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-14 21:26:08 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 21:26:08 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 21:26:08 +0900
+
+
+Started GET "/admin/login" for 10.0.2.2 at 2014-09-14 21:26:10 +0900
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered admin/sessions/new.html.erb within layouts/admin (2.7ms)
+  Rendered admin/shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 322ms (Views: 313.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/session" for 10.0.2.2 at 2014-09-14 21:26:28 +0900
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9V3I8vKNCefhf+hyG8u6NDKYjehT/1K+PGnrjKw4VUg=", "admin_login_form"=>{"email"=>"hanako@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (0.9ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`email_for_index` = 'hanako@example.com' LIMIT 1
+Redirected to http://baukis.example.com:3000/admin
+Completed 302 Found in 130ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-14 21:26:29 +0900
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (0.9ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendered admin/top/dashboard.html.erb within layouts/admin (0.9ms)
+  Rendered admin/shared/_header.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 296ms (Views: 291.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:29 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:29 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:29 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:30 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:30 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:30 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:30 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:30 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:30 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:30 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-14 21:26:31 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-14 21:26:31 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 21:26:31 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 21:26:31 +0900
+
+
+Started GET "/admin/staff_events" for 10.0.2.2 at 2014-09-14 21:26:33 +0900
+Processing by Admin::StaffEventsController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (4.0ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  Rendered errors/internal_server_error.html.erb within layouts/admin (0.1ms)
+  Rendered admin/shared/_header.html.erb (1.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 500 Internal Server Error in 354ms (Views: 346.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/admin/staff_events" for 10.0.2.2 at 2014-09-14 21:26:33 +0900
+Processing by Admin::StaffEventsController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (0.7ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendered errors/internal_server_error.html.erb within layouts/admin (0.1ms)
+  Rendered admin/shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 500 Internal Server Error in 260ms (Views: 256.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:34 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:34 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:34 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:34 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:34 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:35 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:35 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:35 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:35 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-14 21:26:35 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-14 21:26:35 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-14 21:26:35 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 21:26:36 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 21:26:36 +0900
+
+
+Started GET "/admin/staff_events" for 10.0.2.2 at 2014-09-14 21:27:08 +0900
+Processing by Admin::StaffEventsController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (3.9ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  [1m[36mStaffEvent Load (7.3ms)[0m  [1mSELECT `staff_events`.* FROM `staff_events`   ORDER BY `staff_events`.`created_at` DESC[0m
+Completed 500 Internal Server Error in 154ms
+
+NoMethodError (undefined method `page' for #<StaffEvent::ActiveRecord_Relation:0x007f8973be1028>):
+  app/controllers/admin/staff_events_controller.rb:9:in `index'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.8ms)
+
+
+Started GET "/admin/staff_events" for 10.0.2.2 at 2014-09-14 21:30:44 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::StaffEventsController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (2.0ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  [1m[36m (2.5ms)[0m  [1mSELECT COUNT(*) FROM `staff_events`[0m
+  [1m[35mStaffEvent Load (3.6ms)[0m  SELECT  `staff_events`.* FROM `staff_events`   ORDER BY `staff_events`.`created_at` DESC LIMIT 10 OFFSET 0
+  [1m[36mStaffMember Load (0.9ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 16 LIMIT 1[0m
+  [1m[35mStaffMember Load (1.3ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 15 LIMIT 1
+  [1m[36mStaffMember Load (6.0ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 6 LIMIT 1[0m
+  [1m[35mStaffMember Load (0.8ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 10 LIMIT 1
+  [1m[36mStaffMember Load (0.8ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 6 LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 16 LIMIT 1[0m  [["id", 16]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 7 LIMIT 1  [["id", 7]]
+  [1m[36mStaffMember Load (1.1ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 4 LIMIT 1[0m
+  [1m[35mStaffMember Load (0.7ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 5 LIMIT 1
+  Rendered admin/staff_events/_event.html.erb (171.6ms)
+  Rendered admin/staff_events/index.html.erb within layouts/admin (1815.7ms)
+  Rendered admin/shared/_header.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 2632ms (Views: 2395.4ms | ActiveRecord: 38.7ms)
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-14 21:30:48 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-14 21:30:48 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-14 21:30:48 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-14 21:30:49 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-14 21:30:49 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-14 21:30:49 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-14 21:30:49 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-14 21:30:49 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-14 21:30:50 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-14 21:30:50 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-14 21:30:50 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-14 21:30:50 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 21:30:50 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 21:30:51 +0900
+
+
+Started GET "/admin/staff_events?page=2" for 10.0.2.2 at 2014-09-14 21:30:58 +0900
+Processing by Admin::StaffEventsController#index as HTML
+  Parameters: {"page"=>"2", "host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (2.2ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM `staff_events`
+  [1m[36mStaffEvent Load (3.3ms)[0m  [1mSELECT  `staff_events`.* FROM `staff_events`   ORDER BY `staff_events`.`created_at` DESC LIMIT 10 OFFSET 10[0m
+  [1m[35mStaffMember Load (1.1ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 11 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 11 LIMIT 1[0m  [["id", 11]]
+  [1m[35mStaffMember Load (0.9ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 6 LIMIT 1
+  [1m[36mStaffMember Load (0.9ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 16 LIMIT 1[0m
+  [1m[35mStaffMember Load (1.4ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 4 LIMIT 1
+  [1m[36mStaffMember Load (0.9ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 13 LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 13 LIMIT 1  [["id", 13]]
+  [1m[36mStaffMember Load (0.7ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 8 LIMIT 1  [["id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 11 LIMIT 1[0m  [["id", 11]]
+  Rendered admin/staff_events/_event.html.erb (38.2ms)
+  Rendered admin/staff_events/index.html.erb within layouts/admin (671.1ms)
+  Rendered admin/shared/_header.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 1005ms (Views: 985.6ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/admin/staff_events?page=3" for 10.0.2.2 at 2014-09-14 21:31:02 +0900
+Processing by Admin::StaffEventsController#index as HTML
+  Parameters: {"page"=>"3", "host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (1.7ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM `staff_events`[0m
+  [1m[35mStaffEvent Load (3.6ms)[0m  SELECT  `staff_events`.* FROM `staff_events`   ORDER BY `staff_events`.`created_at` DESC LIMIT 10 OFFSET 20
+  [1m[36mStaffMember Load (1.6ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 15 LIMIT 1[0m
+  [1m[35mStaffMember Load (0.8ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 4 LIMIT 1
+  [1m[36mStaffMember Load (6.4ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 14 LIMIT 1[0m
+  [1m[35mStaffMember Load (1.3ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 6 LIMIT 1
+  [1m[36mStaffMember Load (1.1ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 13 LIMIT 1[0m
+  [1m[35mStaffMember Load (1.2ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 10 LIMIT 1
+  [1m[36mStaffMember Load (1.0ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 21 LIMIT 1[0m
+  [1m[35mStaffMember Load (1.0ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 18 LIMIT 1
+  [1m[36mStaffMember Load (1.0ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 11 LIMIT 1[0m
+  [1m[35mStaffMember Load (1.0ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 2 LIMIT 1
+  Rendered admin/staff_events/_event.html.erb (42.5ms)
+  Rendered admin/staff_events/index.html.erb within layouts/admin (766.1ms)
+  Rendered admin/shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 1117ms (Views: 1085.9ms | ActiveRecord: 22.5ms)
+
+
+Started GET "/admin/staff_events?page=3" for 10.0.2.2 at 2014-09-14 21:38:06 +0900
+Processing by Admin::StaffEventsController#index as HTML
+  Parameters: {"page"=>"3", "host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (2.1ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM `staff_events`
+  [1m[36mStaffEvent Load (2.7ms)[0m  [1mSELECT  `staff_events`.* FROM `staff_events`   ORDER BY `staff_events`.`created_at` DESC LIMIT 10 OFFSET 20[0m
+  [1m[35mStaffMember Load (1.0ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 15 LIMIT 1
+  [1m[36mStaffMember Load (0.7ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 4 LIMIT 1[0m
+  [1m[35mStaffMember Load (0.6ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 14 LIMIT 1
+  [1m[36mStaffMember Load (0.8ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 6 LIMIT 1[0m
+  [1m[35mStaffMember Load (0.6ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 13 LIMIT 1
+  [1m[36mStaffMember Load (0.8ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 10 LIMIT 1[0m
+  [1m[35mStaffMember Load (0.8ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 21 LIMIT 1
+  [1m[36mStaffMember Load (1.4ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 18 LIMIT 1[0m
+  [1m[35mStaffMember Load (0.7ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 11 LIMIT 1
+  [1m[36mStaffMember Load (1.7ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 2 LIMIT 1[0m
+  Rendered admin/staff_events/_event.html.erb (32.4ms)
+  Rendered admin/staff_events/index.html.erb within layouts/admin (773.6ms)
+  Rendered admin/shared/_header.html.erb (1.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 1377ms (Views: 1355.1ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-14 21:38:08 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-14 21:38:08 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-14 21:38:08 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-14 21:38:08 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-14 21:38:08 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-14 21:38:09 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-14 21:38:09 +0900
+
+
+Started GET "/assets/admin/pagination.css?body=1" for 10.0.2.2 at 2014-09-14 21:38:09 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-14 21:38:09 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-14 21:38:09 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-14 21:38:09 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-14 21:38:10 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-14 21:38:10 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 21:38:10 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 21:38:10 +0900
+
+
+Started GET "/admin/staff_events?page=7" for 10.0.2.2 at 2014-09-14 21:38:16 +0900
+Processing by Admin::StaffEventsController#index as HTML
+  Parameters: {"page"=>"7", "host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (10.6ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  [1m[36m (40.1ms)[0m  [1mSELECT COUNT(*) FROM `staff_events`[0m
+  [1m[35mStaffEvent Load (2.7ms)[0m  SELECT  `staff_events`.* FROM `staff_events`   ORDER BY `staff_events`.`created_at` DESC LIMIT 10 OFFSET 60
+  [1m[36mStaffMember Load (1.0ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 8 LIMIT 1[0m
+  [1m[35mStaffMember Load (0.8ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1
+  [1m[36mStaffMember Load (0.6ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 13 LIMIT 1[0m
+  [1m[35mStaffMember Load (3.5ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 14 LIMIT 1
+  [1m[36mStaffMember Load (1.1ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 6 LIMIT 1[0m
+  [1m[35mStaffMember Load (1.5ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 13 LIMIT 1[0m  [["id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 13 LIMIT 1  [["id", 13]]
+  [1m[36mStaffMember Load (0.8ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 16 LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 4 LIMIT 1  [["id", 4]]
+  Rendered admin/staff_events/_event.html.erb (40.6ms)
+  Rendered admin/staff_events/index.html.erb within layouts/admin (959.0ms)
+  Rendered admin/shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 1325ms (Views: 1218.9ms | ActiveRecord: 62.9ms)
+
+
+Started GET "/admin/staff_events?page=7" for 10.0.2.2 at 2014-09-14 21:44:50 +0900
+Processing by Admin::StaffEventsController#index as HTML
+  Parameters: {"page"=>"7", "host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (1.6ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM `staff_events`
+  [1m[36mStaffEvent Load (3.2ms)[0m  [1mSELECT  `staff_events`.* FROM `staff_events`   ORDER BY `staff_events`.`created_at` DESC LIMIT 10 OFFSET 60[0m
+  [1m[35mStaffMember Load (1.0ms)[0m  SELECT `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` IN (8, 1, 13, 14, 6, 4, 16)
+  Rendered admin/staff_events/_event.html.erb (9.8ms)
+  Rendered admin/staff_events/index.html.erb within layouts/admin (994.4ms)
+  Rendered admin/shared/_header.html.erb (1.1ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 1414ms (Views: 1297.4ms | ActiveRecord: 19.4ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-14 21:44:52 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-14 21:44:52 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-14 21:44:52 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-14 21:44:52 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-14 21:44:52 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-14 21:44:52 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-14 21:44:53 +0900
+
+
+Started GET "/assets/admin/pagination.css?body=1" for 10.0.2.2 at 2014-09-14 21:44:53 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-14 21:44:53 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-14 21:44:53 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-14 21:44:53 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-14 21:44:53 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-14 21:44:54 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 21:44:54 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 21:44:54 +0900
+
+
+Started DELETE "/admin/session" for 10.0.2.2 at 2014-09-14 21:45:20 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9V3I8vKNCefhf+hyG8u6NDKYjehT/1K+PGnrjKw4VUg=", "host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (2.1ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+Redirected to http://baukis.example.com:3000/admin
+Completed 302 Found in 118ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-14 21:45:22 +0900
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered admin/top/index.html.erb within layouts/admin (8.0ms)
+  Rendered admin/shared/_header.html.erb (2.1ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 659ms (Views: 657.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:23 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:23 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:23 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:23 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:23 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:23 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:24 +0900
+
+
+Started GET "/assets/admin/pagination.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:24 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:24 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:24 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:24 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-14 21:45:24 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-14 21:45:25 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 21:45:25 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 21:45:25 +0900
+
+
+Started GET "/admin/login" for 10.0.2.2 at 2014-09-14 21:45:26 +0900
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered admin/sessions/new.html.erb within layouts/admin (59.1ms)
+  Rendered admin/shared/_header.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 435ms (Views: 408.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/session" for 10.0.2.2 at 2014-09-14 21:45:34 +0900
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9V3I8vKNCefhf+hyG8u6NDKYjehT/1K+PGnrjKw4VUg=", "admin_login_form"=>{"email"=>"hanako@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (3.8ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`email_for_index` = 'hanako@example.com' LIMIT 1[0m
+Redirected to http://baukis.example.com:3000/admin
+Completed 302 Found in 126ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-14 21:45:35 +0900
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (1.8ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  Rendered admin/top/dashboard.html.erb within layouts/admin (4.7ms)
+  Rendered admin/shared/_header.html.erb (1.1ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 315ms (Views: 308.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:35 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:35 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:36 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:36 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:36 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:36 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:36 +0900
+
+
+Started GET "/assets/admin/pagination.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:36 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:37 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:37 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-14 21:45:37 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-14 21:45:37 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-14 21:45:37 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 21:45:37 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 21:45:37 +0900
+
+
+Started GET "/admin/staff_events" for 10.0.2.2 at 2014-09-14 21:45:39 +0900
+Processing by Admin::StaffEventsController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (1.4ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM `staff_events`
+  [1m[36mStaffEvent Load (5.3ms)[0m  [1mSELECT  `staff_events`.* FROM `staff_events`   ORDER BY `staff_events`.`created_at` DESC LIMIT 10 OFFSET 0[0m
+  [1m[35mStaffMember Load (1.1ms)[0m  SELECT `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` IN (16, 15, 6, 10, 7, 4, 5)
+  Rendered admin/staff_events/_event.html.erb (15.5ms)
+  Rendered admin/staff_events/index.html.erb within layouts/admin (1670.5ms)
+  Rendered admin/shared/_header.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 2041ms (Views: 1959.6ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-14 21:53:00 +0900
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (1.5ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendered admin/top/dashboard.html.erb within layouts/admin (1.8ms)
+  Rendered admin/shared/_header.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 393ms (Views: 337.3ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-14 21:53:02 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (2.1ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  [1m[36m (2.7ms)[0m  [1mSELECT COUNT(*) FROM `staff_members`[0m
+  [1m[35mStaffMember Load (1.1ms)[0m  SELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 0
+  Rendered admin/staff_members/index.html.erb within layouts/admin (368.5ms)
+  Rendered admin/shared/_header.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 675ms (Views: 629.6ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/admin/staff_members?page=2" for 10.0.2.2 at 2014-09-14 21:53:05 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"page"=>"2", "host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (1.1ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM `staff_members`
+  [1m[36mStaffMember Load (1.4ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 10[0m
+  Rendered admin/staff_members/index.html.erb within layouts/admin (384.8ms)
+  Rendered admin/shared/_header.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 634ms (Views: 627.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/admin/staff_members?page=3" for 10.0.2.2 at 2014-09-14 21:53:06 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"page"=>"3", "host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (4.8ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM `staff_members`[0m
+  [1m[35mStaffMember Load (1.3ms)[0m  SELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 20
+  Rendered admin/staff_members/index.html.erb within layouts/admin (442.0ms)
+  Rendered admin/shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 838ms (Views: 818.6ms | ActiveRecord: 7.2ms)
+
+
+Started DELETE "/admin/session" for 10.0.2.2 at 2014-09-14 21:53:10 +0900
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9V3I8vKNCefhf+hyG8u6NDKYjehT/1K+PGnrjKw4VUg=", "host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (0.6ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+Redirected to http://baukis.example.com:3000/admin
+Completed 302 Found in 15ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-14 21:53:10 +0900
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered admin/top/index.html.erb within layouts/admin (0.2ms)
+  Rendered admin/shared/_header.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 314ms (Views: 312.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-14 21:53:11 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-14 21:53:11 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-14 21:53:11 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-14 21:53:11 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-14 21:53:11 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-14 21:53:11 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-14 21:53:11 +0900
+
+
+Started GET "/assets/admin/pagination.css?body=1" for 10.0.2.2 at 2014-09-14 21:53:12 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-14 21:53:12 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-14 21:53:12 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-14 21:53:12 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-14 21:53:12 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-14 21:53:12 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 21:53:13 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 21:53:13 +0900

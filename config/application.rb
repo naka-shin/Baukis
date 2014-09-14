@@ -40,9 +40,11 @@ module Baukis
       g.controller_specs false
       g.view_specs false
     end
-
     # Strong Paramters無効化
     # config.action_controller.permit_all_parameters = true
+
+    config.quiet_assets = false
+
   end
 end
 

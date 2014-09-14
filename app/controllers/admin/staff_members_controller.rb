@@ -6,6 +6,7 @@ class Admin::StaffMembersController < Admin::Base
       redirect_to :admin_login and return
     end
     @staff_members = StaffMember.order(:family_name_kana, :given_name_kana)
+      .page(params[:page])
   end
 
   def show
