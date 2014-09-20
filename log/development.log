@@ -6656,3 +6656,1378 @@ Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-14 21:53:13 +
 
 
 Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-14 21:53:13 +0900
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-20 14:44:46 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (2.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/migration.rb:389:in `check_pending!'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activerecord-4.1.4/lib/active_record/migration.rb:377:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/callbacks.rb:82:in `run_callbacks'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:38:in `call_app'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:20:in `block in call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/tagged_logging.rb:68:in `tagged'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/rack/logger.rb:20:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/activesupport-4.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/static.rb:64:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/engine.rb:514:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.4/lib/rails/application.rb:144:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+  /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateStaffEvents (20140914014205)
+  [1m[35m (21.1ms)[0m  CREATE TABLE `staff_events` (`id` int(11) auto_increment PRIMARY KEY, `staff_member_id` int(11) NOT NULL, `type` varchar(255) NOT NULL, `created_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (14.7ms)[0m  [1mCREATE  INDEX `index_staff_events_on_created_at`  ON `staff_events` (`created_at`) [0m
+  [1m[35m (15.6ms)[0m  CREATE  INDEX `index_staff_events_on_staff_member_id_and_created_at`  ON `staff_events` (`staff_member_id`, `created_at`) 
+  [1m[36m (20.0ms)[0m  [1mALTER TABLE `staff_events` ADD CONSTRAINT `staff_events_staff_member_id_fk` FOREIGN KEY (`staff_member_id`) REFERENCES `staff_members`(id)[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20140914014205')[0m
+  [1m[35m (3.0ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (5.2ms)[0m  
+          SELECT fk.referenced_table_name as 'to_table'
+                ,fk.referenced_column_name as 'primary_key'
+                ,fk.column_name as 'column'
+                ,fk.constraint_name as 'name'
+          FROM information_schema.key_column_usage fk
+          WHERE fk.referenced_column_name is not null
+            AND fk.table_schema = 'baukis_development'
+            AND fk.table_name = 'administrators'
+        
+  [1m[36m (0.5ms)[0m  [1mSHOW CREATE TABLE `administrators`[0m
+  [1m[35m (0.6ms)[0m  
+          SELECT fk.referenced_table_name as 'to_table'
+                ,fk.referenced_column_name as 'primary_key'
+                ,fk.column_name as 'column'
+                ,fk.constraint_name as 'name'
+          FROM information_schema.key_column_usage fk
+          WHERE fk.referenced_column_name is not null
+            AND fk.table_schema = 'baukis_development'
+            AND fk.table_name = 'staff_events'
+        
+  [1m[36m (0.4ms)[0m  [1mSHOW CREATE TABLE `staff_events`[0m
+  [1m[35m (0.7ms)[0m  
+          SELECT fk.referenced_table_name as 'to_table'
+                ,fk.referenced_column_name as 'primary_key'
+                ,fk.column_name as 'column'
+                ,fk.constraint_name as 'name'
+          FROM information_schema.key_column_usage fk
+          WHERE fk.referenced_column_name is not null
+            AND fk.table_schema = 'baukis_development'
+            AND fk.table_name = 'staff_members'
+        
+  [1m[36m (0.6ms)[0m  [1mSHOW CREATE TABLE `staff_members`[0m
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-20 14:45:31 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Staff::TopController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered staff/top/index.html.erb within layouts/staff (8.6ms)
+  Rendered staff/shared/_header.html.erb (2.8ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 621ms (Views: 581.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-20 14:45:32 +0900
+
+
+Started GET "/assets/staff/form.css?body=1" for 10.0.2.2 at 2014-09-20 14:45:32 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-20 14:45:33 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-20 14:45:33 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-20 14:45:33 +0900
+
+
+Started GET "/assets/staff/flash.css?body=1" for 10.0.2.2 at 2014-09-20 14:45:33 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-20 14:45:33 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-20 14:45:33 +0900
+
+
+Started GET "/assets/staff/tables.css?body=1" for 10.0.2.2 at 2014-09-20 14:45:33 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-20 14:45:34 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-20 14:45:34 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-20 14:45:34 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-20 14:45:34 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-20 14:45:34 +0900
+
+
+Started GET "/login" for 10.0.2.2 at 2014-09-20 14:45:46 +0900
+Processing by Staff::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered staff/sessions/new.html.erb within layouts/staff (67.4ms)
+  Rendered staff/shared/_header.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 362ms (Views: 347.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 10.0.2.2 at 2014-09-20 14:45:55 +0900
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E0wGVujeuZ+gFdDiJThEySKuyvaixkMNvc1MQu8x160=", "staff_login_form"=>{"email"=>"taro@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis.example.com"}
+  [1m[35mStaffMember Load (0.9ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`email_for_index` = 'taro@example.com' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-20 05:45:55', 1, 'logged_in')
+  [1m[36m (10.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://baukis.example.com:3000/
+Completed 302 Found in 329ms (ActiveRecord: 17.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-20 14:45:55 +0900
+Processing by Staff::TopController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mStaffMember Load (0.8ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1
+  Rendered staff/top/index.html.erb within layouts/staff (0.1ms)
+  Rendered staff/shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 264ms (Views: 260.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/account" for 10.0.2.2 at 2014-09-20 14:45:58 +0900
+Processing by Staff::AccountsController#show as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mStaffMember Load (0.9ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1[0m
+  Rendered staff/accounts/show.html.erb within layouts/staff (2.5ms)
+  Rendered staff/shared/_header.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 293ms (Views: 288.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/account/edit" for 10.0.2.2 at 2014-09-20 14:46:01 +0900
+Processing by Staff::AccountsController#edit as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mStaffMember Load (0.8ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1
+  Rendered staff/accounts/_form.html.erb (9.6ms)
+  Rendered staff/accounts/edit.html.erb within layouts/staff (57.3ms)
+  Rendered staff/shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 325ms (Views: 320.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/account/edit" for 10.0.2.2 at 2014-09-20 14:55:41 +0900
+Processing by Staff::AccountsController#edit as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mStaffMember Load (0.8ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1[0m
+  Rendered staff/accounts/_form.html.erb (2.1ms)
+  Rendered staff/accounts/edit.html.erb within layouts/staff (29.4ms)
+  Rendered staff/shared/_header.html.erb (1.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 389ms (Views: 335.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-20 14:55:42 +0900
+
+
+Started GET "/assets/staff/form.css?body=1" for 10.0.2.2 at 2014-09-20 14:55:42 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-20 14:55:42 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-20 14:55:43 +0900
+
+
+Started GET "/assets/staff/flash.css?body=1" for 10.0.2.2 at 2014-09-20 14:55:43 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-20 14:55:43 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-20 14:55:43 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-20 14:55:43 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-20 14:55:44 +0900
+
+
+Started GET "/assets/staff/tables.css?body=1" for 10.0.2.2 at 2014-09-20 14:55:44 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-20 14:55:44 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-20 14:55:44 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-20 14:55:44 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-20 14:55:44 +0900
+
+
+Started GET "/account" for 10.0.2.2 at 2014-09-20 14:56:20 +0900
+Processing by Staff::AccountsController#show as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mStaffMember Load (0.8ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1
+  Rendered staff/accounts/show.html.erb within layouts/staff (1.0ms)
+  Rendered staff/shared/_header.html.erb (1.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 322ms (Views: 273.6ms | ActiveRecord: 2.3ms)
+
+
+Started DELETE "/session" for 10.0.2.2 at 2014-09-20 14:56:25 +0900
+Processing by Staff::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E0wGVujeuZ+gFdDiJThEySKuyvaixkMNvc1MQu8x160=", "host"=>"baukis.example.com"}
+  [1m[36mStaffMember Load (0.8ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-20 05:56:26', 1, 'logged_out')[0m
+  [1m[35m (2.8ms)[0m  COMMIT
+Redirected to http://baukis.example.com:3000/
+Completed 302 Found in 52ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-20 14:56:26 +0900
+Processing by Staff::TopController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered staff/top/index.html.erb within layouts/staff (0.1ms)
+  Rendered staff/shared/_header.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 275ms (Views: 273.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/staff/form.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:26 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:26 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:26 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:27 +0900
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:27 +0900
+
+
+Started GET "/assets/staff/flash.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:27 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:27 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:27 +0900
+
+
+Started GET "/assets/staff/tables.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:28 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:28 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-20 14:56:28 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-20 14:56:28 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-20 14:56:28 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-20 14:56:28 +0900
+
+
+Started GET "/login" for 10.0.2.2 at 2014-09-20 14:56:40 +0900
+Processing by Staff::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered staff/sessions/new.html.erb within layouts/staff (2.0ms)
+  Rendered staff/shared/_header.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 376ms (Views: 363.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 10.0.2.2 at 2014-09-20 14:56:49 +0900
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E0wGVujeuZ+gFdDiJThEySKuyvaixkMNvc1MQu8x160=", "staff_login_form"=>{"email"=>"taro@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis.example.com"}
+  [1m[36mStaffMember Load (1.0ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`email_for_index` = 'taro@example.com' LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `staff_events` (`created_at`, `staff_member_id`, `type`) VALUES ('2014-09-20 05:56:49', 1, 'logged_in')[0m
+  [1m[35m (3.1ms)[0m  COMMIT
+Redirected to http://baukis.example.com:3000/
+Completed 302 Found in 144ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2014-09-20 14:56:49 +0900
+Processing by Staff::TopController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mStaffMember Load (2.7ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1[0m
+  Rendered staff/top/index.html.erb within layouts/staff (0.1ms)
+  Rendered staff/shared/_header.html.erb (3.0ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 271ms (Views: 260.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/staff/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:50 +0900
+
+
+Started GET "/assets/staff/_colors.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:50 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:50 +0900
+
+
+Started GET "/assets/staff/form.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:50 +0900
+
+
+Started GET "/assets/staff/container.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:50 +0900
+
+
+Started GET "/assets/staff/flash.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:51 +0900
+
+
+Started GET "/assets/staff/layout.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:51 +0900
+
+
+Started GET "/assets/staff/sessions.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:51 +0900
+
+
+Started GET "/assets/staff/tables.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:51 +0900
+
+
+Started GET "/assets/staff.css?body=1" for 10.0.2.2 at 2014-09-20 14:56:51 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-20 14:56:51 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-20 14:56:52 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-20 14:56:52 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-20 14:56:52 +0900
+
+
+Started GET "/account" for 10.0.2.2 at 2014-09-20 14:59:38 +0900
+Processing by Staff::AccountsController#show as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mStaffMember Load (0.7ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1
+  Rendered staff/accounts/show.html.erb within layouts/staff (1.0ms)
+  Rendered staff/shared/_header.html.erb (1.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 293ms (Views: 289.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/account/edit" for 10.0.2.2 at 2014-09-20 14:59:41 +0900
+Processing by Staff::AccountsController#edit as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mStaffMember Load (1.1ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1[0m
+  Rendered staff/accounts/_form.html.erb (1.0ms)
+  Rendered staff/accounts/edit.html.erb within layouts/staff (38.6ms)
+  Rendered staff/shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 331ms (Views: 326.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-20 15:00:13 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+Redirected to http://baukis.example.com:3000/admin/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 10.0.2.2 at 2014-09-20 15:00:13 +0900
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered admin/sessions/new.html.erb within layouts/admin (2.7ms)
+Completed 500 Internal Server Error in 237ms
+
+ActionView::Template::Error (Undefined variable: "$pink".
+  (in /vagrant/app/assets/stylesheets/admin/form.css.scss:48)):
+    2: <html>
+    3: <head>
+    4: <title><%= document_title %></title>
+    5:   <%= stylesheet_link_tag "admin", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/admin/form.css.scss:48
+  app/views/layouts/admin.html.erb:5:in `_app_views_layouts_admin_html_erb__2404278226396268143_70067600692360'
+  app/controllers/admin/sessions_controller.rb:9:in `new'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.4ms)
+
+
+Started GET "/admin/login" for 10.0.2.2 at 2014-09-20 15:05:59 +0900
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered admin/sessions/new.html.erb within layouts/admin (2.8ms)
+Completed 500 Internal Server Error in 199ms
+
+ActionView::Template::Error (Undefined variable: "$pink".
+  (in /vagrant/app/assets/stylesheets/admin/form.css.scss:47)):
+    2: <html>
+    3: <head>
+    4: <title><%= document_title %></title>
+    5:   <%= stylesheet_link_tag "admin", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/admin/form.css.scss:47
+  app/views/layouts/admin.html.erb:5:in `_app_views_layouts_admin_html_erb__2404278226396268143_70067600692360'
+  app/controllers/admin/sessions_controller.rb:9:in `new'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.3ms)
+
+
+Started GET "/admin/login" for 10.0.2.2 at 2014-09-20 15:07:15 +0900
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  Rendered admin/sessions/new.html.erb within layouts/admin (1.1ms)
+  Rendered admin/shared/_header.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 820ms (Views: 818.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-20 15:07:16 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-20 15:07:16 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-20 15:07:16 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-20 15:07:16 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-20 15:07:16 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-20 15:07:16 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-20 15:07:16 +0900
+
+
+Started GET "/assets/admin/pagination.css?body=1" for 10.0.2.2 at 2014-09-20 15:07:16 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-20 15:07:17 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-20 15:07:17 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-20 15:07:17 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-20 15:07:17 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-20 15:07:17 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-20 15:07:17 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-20 15:07:17 +0900
+
+
+Started POST "/admin/session" for 10.0.2.2 at 2014-09-20 15:07:25 +0900
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E0wGVujeuZ+gFdDiJThEySKuyvaixkMNvc1MQu8x160=", "admin_login_form"=>{"email"=>"hanako@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (0.6ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`email_for_index` = 'hanako@example.com' LIMIT 1
+Redirected to http://baukis.example.com:3000/admin
+Completed 302 Found in 155ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/admin" for 10.0.2.2 at 2014-09-20 15:07:25 +0900
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (0.9ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendered admin/top/dashboard.html.erb within layouts/admin (3.2ms)
+  Rendered admin/shared/_header.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 225ms (Views: 219.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-20 15:07:25 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-20 15:07:25 +0900
+
+
+Started GET "/assets/admin/pagination.css?body=1" for 10.0.2.2 at 2014-09-20 15:07:26 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-20 15:07:26 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-20 15:07:26 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-20 15:07:26 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-20 15:07:26 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-20 15:07:26 +0900
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-20 15:07:29 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (0.9ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM `staff_members`[0m
+  [1m[35mStaffMember Load (1.0ms)[0m  SELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 0
+  Rendered admin/staff_members/index.html.erb within layouts/admin (1031.5ms)
+Completed 500 Internal Server Error in 1125ms
+
+ActionView::Template::Error (undefined method `suspended?' for #<StaffMemberPresenter:0x007f73dbc9ec20>):
+    25:         <td class="email"><%= m.email %></td>
+    26:         <td class="date"><%= m.start_date.strftime('%Y/%m/%d') %></td>
+    27:         <td class="date"><%= m.end_date.try(:strftime, '%Y/%m/%d') %></td>
+    28:         <td class="boolean"><%= p.suspended? %></td>
+    29:         <td class="actions">
+    30:           <%= link_to '編集', [ :edit, :admin, m ] %> |
+    31:           <%= link_to 'Events', [ :admin, m, :staff_events ] %> |
+  app/views/admin/staff_members/index.html.erb:28:in `block in _app_views_admin_staff_members_index_html_erb__922650498558168261_70067781871920'
+  app/views/admin/staff_members/index.html.erb:20:in `_app_views_admin_staff_members_index_html_erb__922650498558168261_70067781871920'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.7ms)
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-20 15:07:30 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (1.1ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM `staff_members`
+  [1m[36mStaffMember Load (0.8ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 0[0m
+  Rendered admin/staff_members/index.html.erb within layouts/admin (203.3ms)
+Completed 500 Internal Server Error in 252ms
+
+ActionView::Template::Error (undefined method `suspended?' for #<StaffMemberPresenter:0x007f73da6ccaa0>):
+    25:         <td class="email"><%= m.email %></td>
+    26:         <td class="date"><%= m.start_date.strftime('%Y/%m/%d') %></td>
+    27:         <td class="date"><%= m.end_date.try(:strftime, '%Y/%m/%d') %></td>
+    28:         <td class="boolean"><%= p.suspended? %></td>
+    29:         <td class="actions">
+    30:           <%= link_to '編集', [ :edit, :admin, m ] %> |
+    31:           <%= link_to 'Events', [ :admin, m, :staff_events ] %> |
+  app/views/admin/staff_members/index.html.erb:28:in `block in _app_views_admin_staff_members_index_html_erb__922650498558168261_70067782339100'
+  app/views/admin/staff_members/index.html.erb:20:in `_app_views_admin_staff_members_index_html_erb__922650498558168261_70067782339100'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.8ms)
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-20 15:10:16 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (0.6ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM `staff_members`[0m
+  [1m[35mStaffMember Load (0.7ms)[0m  SELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 0
+  Rendered admin/staff_members/index.html.erb within layouts/admin (205.0ms)
+Completed 500 Internal Server Error in 253ms
+
+ActionView::Template::Error (undefined method `delegate' for #<StaffMemberPresenter:0x007f73c4daf400>):
+    25:         <td class="email"><%= m.email %></td>
+    26:         <td class="date"><%= m.start_date.strftime('%Y/%m/%d') %></td>
+    27:         <td class="date"><%= m.end_date.try(:strftime, '%Y/%m/%d') %></td>
+    28:         <td class="boolean"><%= p.suspended_mark %></td>
+    29:         <td class="actions">
+    30:           <%= link_to '編集', [ :edit, :admin, m ] %> |
+    31:           <%= link_to 'Events', [ :admin, m, :staff_events ] %> |
+  app/presenters/staff_member_presenter.rb:6:in `suspended_mark'
+  app/views/admin/staff_members/index.html.erb:28:in `block in _app_views_admin_staff_members_index_html_erb__922650498558168261_70067762150440'
+  app/views/admin/staff_members/index.html.erb:20:in `_app_views_admin_staff_members_index_html_erb__922650498558168261_70067762150440'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.3ms)
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-20 15:16:41 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (0.7ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM `staff_members`
+  [1m[36mStaffMember Load (1.0ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 0[0m
+  Rendered admin/staff_members/index.html.erb within layouts/admin (196.9ms)
+Completed 500 Internal Server Error in 243ms
+
+ActionView::Template::Error (undefined method `delegate' for #<StaffMemberPresenter:0x007f73c477f2b0>):
+    25:         <td class="email"><%= m.email %></td>
+    26:         <td class="date"><%= m.start_date.strftime('%Y/%m/%d') %></td>
+    27:         <td class="date"><%= m.end_date.try(:strftime, '%Y/%m/%d') %></td>
+    28:         <td class="boolean"><%= p.suspended_mark %></td>
+    29:         <td class="actions">
+    30:           <%= link_to '編集', [ :edit, :admin, m ] %> |
+    31:           <%= link_to 'Events', [ :admin, m, :staff_events ] %> |
+  app/presenters/staff_member_presenter.rb:6:in `suspended_mark'
+  app/views/admin/staff_members/index.html.erb:28:in `block in _app_views_admin_staff_members_index_html_erb__922650498558168261_70067762150440'
+  app/views/admin/staff_members/index.html.erb:20:in `_app_views_admin_staff_members_index_html_erb__922650498558168261_70067762150440'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.6ms)
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-20 15:22:43 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (0.9ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM `staff_members`[0m
+  [1m[35mStaffMember Load (0.7ms)[0m  SELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 0
+  Rendered admin/staff_members/index.html.erb within layouts/admin (195.8ms)
+Completed 500 Internal Server Error in 241ms
+
+ActionView::Template::Error (undefined method `delegate' for #<StaffMemberPresenter:0x007f73c412a428>):
+    25:         <td class="email"><%= m.email %></td>
+    26:         <td class="date"><%= m.start_date.strftime('%Y/%m/%d') %></td>
+    27:         <td class="date"><%= m.end_date.try(:strftime, '%Y/%m/%d') %></td>
+    28:         <td class="boolean"><%= p.suspended_mark %></td>
+    29:         <td class="actions">
+    30:           <%= link_to '編集', [ :edit, :admin, m ] %> |
+    31:           <%= link_to 'Events', [ :admin, m, :staff_events ] %> |
+  app/presenters/staff_member_presenter.rb:6:in `suspended_mark'
+  app/views/admin/staff_members/index.html.erb:28:in `block in _app_views_admin_staff_members_index_html_erb__922650498558168261_70067594299640'
+  app/views/admin/staff_members/index.html.erb:20:in `_app_views_admin_staff_members_index_html_erb__922650498558168261_70067594299640'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.7ms)
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-20 15:22:46 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (0.6ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM `staff_members`
+  [1m[36mStaffMember Load (0.7ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 0[0m
+  Rendered admin/staff_members/index.html.erb within layouts/admin (199.7ms)
+Completed 500 Internal Server Error in 247ms
+
+ActionView::Template::Error (undefined method `delegate' for #<StaffMemberPresenter:0x007f73dbac4b98>):
+    25:         <td class="email"><%= m.email %></td>
+    26:         <td class="date"><%= m.start_date.strftime('%Y/%m/%d') %></td>
+    27:         <td class="date"><%= m.end_date.try(:strftime, '%Y/%m/%d') %></td>
+    28:         <td class="boolean"><%= p.suspended_mark %></td>
+    29:         <td class="actions">
+    30:           <%= link_to '編集', [ :edit, :admin, m ] %> |
+    31:           <%= link_to 'Events', [ :admin, m, :staff_events ] %> |
+  app/presenters/staff_member_presenter.rb:6:in `suspended_mark'
+  app/views/admin/staff_members/index.html.erb:28:in `block in _app_views_admin_staff_members_index_html_erb__922650498558168261_70067594299640'
+  app/views/admin/staff_members/index.html.erb:20:in `_app_views_admin_staff_members_index_html_erb__922650498558168261_70067594299640'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.6ms)
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-20 15:23:35 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (0.8ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM `staff_members`[0m
+  [1m[35mStaffMember Load (0.7ms)[0m  SELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 0
+  Rendered admin/staff_members/index.html.erb within layouts/admin (194.8ms)
+Completed 500 Internal Server Error in 236ms
+
+ActionView::Template::Error (undefined method `delegate' for #<StaffMemberPresenter:0x007f73da36bf00>):
+    25:         <td class="email"><%= m.email %></td>
+    26:         <td class="date"><%= m.start_date.strftime('%Y/%m/%d') %></td>
+    27:         <td class="date"><%= m.end_date.try(:strftime, '%Y/%m/%d') %></td>
+    28:         <td class="boolean"><%= p.suspended_mark %></td>
+    29:         <td class="actions">
+    30:           <%= link_to '編集', [ :edit, :admin, m ] %> |
+    31:           <%= link_to 'Events', [ :admin, m, :staff_events ] %> |
+  app/presenters/staff_member_presenter.rb:6:in `suspended_mark'
+  app/views/admin/staff_members/index.html.erb:28:in `block in _app_views_admin_staff_members_index_html_erb__922650498558168261_70067594299640'
+  app/views/admin/staff_members/index.html.erb:20:in `_app_views_admin_staff_members_index_html_erb__922650498558168261_70067594299640'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.4ms)
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-20 15:24:03 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (0.7ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM `staff_members`
+  [1m[36mStaffMember Load (0.7ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 0[0m
+  Rendered admin/staff_members/index.html.erb within layouts/admin (187.2ms)
+Completed 500 Internal Server Error in 233ms
+
+ActionView::Template::Error (undefined method `delegate' for #<StaffMemberPresenter:0x007f73c4bde220>):
+    25:         <td class="email"><%= m.email %></td>
+    26:         <td class="date"><%= m.start_date.strftime('%Y/%m/%d') %></td>
+    27:         <td class="date"><%= m.end_date.try(:strftime, '%Y/%m/%d') %></td>
+    28:         <td class="boolean"><%= p.suspended_mark %></td>
+    29:         <td class="actions">
+    30:           <%= link_to '編集', [ :edit, :admin, m ] %> |
+    31:           <%= link_to 'Events', [ :admin, m, :staff_events ] %> |
+  app/presenters/staff_member_presenter.rb:6:in `suspended_mark'
+  app/views/admin/staff_members/index.html.erb:28:in `block in _app_views_admin_staff_members_index_html_erb__922650498558168261_70067594299640'
+  app/views/admin/staff_members/index.html.erb:20:in `_app_views_admin_staff_members_index_html_erb__922650498558168261_70067594299640'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.3ms)
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-20 15:24:19 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (0.7ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `staff_members`[0m
+  [1m[35mStaffMember Load (0.8ms)[0m  SELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 0
+  Rendered admin/staff_members/index.html.erb within layouts/admin (909.0ms)
+  Rendered admin/shared/_header.html.erb (1.1ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 1500ms (Views: 1358.4ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-20 15:24:22 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-20 15:24:22 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-20 15:24:22 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-20 15:24:22 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-20 15:24:22 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-20 15:24:23 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-20 15:24:23 +0900
+
+
+Started GET "/assets/admin/pagination.css?body=1" for 10.0.2.2 at 2014-09-20 15:24:23 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-20 15:24:23 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-20 15:24:23 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-20 15:24:23 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-20 15:24:23 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-20 15:24:24 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-20 15:24:24 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-20 15:24:24 +0900
+
+
+Started GET "/admin/staff_members?page=2" for 10.0.2.2 at 2014-09-20 15:24:27 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"page"=>"2", "host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (0.7ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM `staff_members`
+  [1m[36mStaffMember Load (0.8ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 10[0m
+  Rendered admin/staff_members/index.html.erb within layouts/admin (313.9ms)
+  Rendered admin/shared/_header.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 544ms (Views: 538.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/admin/staff_members?page=3" for 10.0.2.2 at 2014-09-20 15:24:29 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"page"=>"3", "host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (0.7ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM `staff_members`[0m
+  [1m[35mStaffMember Load (0.9ms)[0m  SELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 20
+  Rendered admin/staff_members/index.html.erb within layouts/admin (303.7ms)
+  Rendered admin/shared/_header.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 541ms (Views: 534.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/admin/staff_members/1/edit" for 10.0.2.2 at 2014-09-20 15:24:34 +0900
+Processing by Admin::StaffMembersController#edit as HTML
+  Parameters: {"host"=>"baukis.example.com", "id"=>"1"}
+  [1m[36mAdministrator Load (0.9ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35mStaffMember Load (0.7ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1
+  Rendered admin/staff_members/_form.html.erb (88.9ms)
+  Rendered admin/staff_members/edit.html.erb within layouts/admin (135.0ms)
+Completed 500 Internal Server Error in 198ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    1: <%= markup do |m|
+    2:   p = StaffMemberFormPresenter.new(f, self)
+    3:   p.with_options(required: true) do |q|
+    4:     m << q.notes
+    5:     m << q.text_field_block(:email, 'メールアドレス', size: 32)
+    6:     m << q.password_field_block(:password, 'パスワード', size: 32)
+    7:     m << q.full_name_block(:family_name, :given_name, '氏名')
+  app/presenters/form_presenter.rb:13:in `notes'
+  app/views/admin/staff_members/_form.html.erb:4:in `block (2 levels) in _app_views_admin_staff_members__form_html_erb___2350540466719299795_70188595084080'
+  app/views/admin/staff_members/_form.html.erb:3:in `block in _app_views_admin_staff_members__form_html_erb___2350540466719299795_70188595084080'
+  app/lib/html_builder.rb:11:in `block in markup'
+  app/lib/html_builder.rb:5:in `markup'
+  app/views/admin/staff_members/_form.html.erb:1:in `_app_views_admin_staff_members__form_html_erb___2350540466719299795_70188595084080'
+  app/views/admin/staff_members/edit.html.erb:5:in `block in _app_views_admin_staff_members_edit_html_erb___1726323740382985651_70188595172260'
+  app/views/admin/staff_members/edit.html.erb:4:in `_app_views_admin_staff_members_edit_html_erb___1726323740382985651_70188595172260'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.0ms)
+
+
+Started GET "/admin/staff_members/1/edit" for 10.0.2.2 at 2014-09-20 15:24:34 +0900
+Processing by Admin::StaffMembersController#edit as HTML
+  Parameters: {"host"=>"baukis.example.com", "id"=>"1"}
+  [1m[36mAdministrator Load (0.8ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35mStaffMember Load (0.7ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1
+  Rendered admin/staff_members/_form.html.erb (22.5ms)
+  Rendered admin/staff_members/edit.html.erb within layouts/admin (47.0ms)
+Completed 500 Internal Server Error in 97ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    1: <%= markup do |m|
+    2:   p = StaffMemberFormPresenter.new(f, self)
+    3:   p.with_options(required: true) do |q|
+    4:     m << q.notes
+    5:     m << q.text_field_block(:email, 'メールアドレス', size: 32)
+    6:     m << q.password_field_block(:password, 'パスワード', size: 32)
+    7:     m << q.full_name_block(:family_name, :given_name, '氏名')
+  app/presenters/form_presenter.rb:13:in `notes'
+  app/views/admin/staff_members/_form.html.erb:4:in `block (2 levels) in _app_views_admin_staff_members__form_html_erb___2350540466719299795_70188592714620'
+  app/views/admin/staff_members/_form.html.erb:3:in `block in _app_views_admin_staff_members__form_html_erb___2350540466719299795_70188592714620'
+  app/lib/html_builder.rb:11:in `block in markup'
+  app/lib/html_builder.rb:5:in `markup'
+  app/views/admin/staff_members/_form.html.erb:1:in `_app_views_admin_staff_members__form_html_erb___2350540466719299795_70188592714620'
+  app/views/admin/staff_members/edit.html.erb:5:in `block in _app_views_admin_staff_members_edit_html_erb___1726323740382985651_70188592782420'
+  app/views/admin/staff_members/edit.html.erb:4:in `_app_views_admin_staff_members_edit_html_erb___1726323740382985651_70188592782420'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.7ms)
+
+
+Started GET "/admin/staff_members/1/edit" for 10.0.2.2 at 2014-09-20 15:28:07 +0900
+Processing by Admin::StaffMembersController#edit as HTML
+  Parameters: {"host"=>"baukis.example.com", "id"=>"1"}
+  [1m[36mAdministrator Load (0.6ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35mStaffMember Load (0.9ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1
+  Rendered admin/staff_members/_form.html.erb (42.0ms)
+  Rendered admin/staff_members/edit.html.erb within layouts/admin (63.2ms)
+Completed 500 Internal Server Error in 113ms
+
+ActionView::Template::Error (undefined local variable or method `q' for #<#<Class:0x007fac34e3b920>:0x007fac1c03fa78>):
+    1: <%= markup do |m|
+    2:   p = StaffMemberFormPresenter.new(f, self)
+    3:   m << q.notes
+    4:   p.with_options(required: true) do |q|
+    5:     m << q.text_field_block(:email, 'メールアドレス', size: 32)
+    6:     m << q.password_field_block(:password, 'パスワード', size: 32)
+  app/views/admin/staff_members/_form.html.erb:3:in `block in _app_views_admin_staff_members__form_html_erb___2350540466719299795_70188590489860'
+  app/lib/html_builder.rb:11:in `block in markup'
+  app/lib/html_builder.rb:5:in `markup'
+  app/views/admin/staff_members/_form.html.erb:1:in `_app_views_admin_staff_members__form_html_erb___2350540466719299795_70188590489860'
+  app/views/admin/staff_members/edit.html.erb:5:in `block in _app_views_admin_staff_members_edit_html_erb___1726323740382985651_70188592782420'
+  app/views/admin/staff_members/edit.html.erb:4:in `_app_views_admin_staff_members_edit_html_erb___1726323740382985651_70188592782420'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.9ms)
+
+
+Started GET "/admin/staff_members/1/edit" for 10.0.2.2 at 2014-09-20 15:28:19 +0900
+Processing by Admin::StaffMembersController#edit as HTML
+  Parameters: {"host"=>"baukis.example.com", "id"=>"1"}
+  [1m[36mAdministrator Load (0.7ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35mStaffMember Load (0.8ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1
+  Rendered admin/staff_members/_form.html.erb (77.6ms)
+  Rendered admin/staff_members/edit.html.erb within layouts/admin (102.6ms)
+  Rendered admin/shared/_header.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 328ms (Views: 321.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:20 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:20 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:20 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:20 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:20 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:21 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:21 +0900
+
+
+Started GET "/assets/admin/pagination.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:21 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:21 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:21 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:21 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-20 15:28:21 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-20 15:28:21 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-20 15:28:21 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-20 15:28:22 +0900
+
+
+Started PATCH "/admin/staff_members/1" for 10.0.2.2 at 2014-09-20 15:28:24 +0900
+Processing by Admin::StaffMembersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E0wGVujeuZ+gFdDiJThEySKuyvaixkMNvc1MQu8x160=", "staff_member"=>{"email"=>"taro@example.com", "family_name"=>"山田", "given_name"=>"太郎", "family_name_kana"=>"ヤマダ", "given_name_kana"=>"タロウ", "start_date"=>"2014-09-13", "end_date"=>"", "suspended"=>"0"}, "commit"=>"更新", "host"=>"baukis.example.com", "id"=>"1"}
+  [1m[36mAdministrator Load (0.7ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35mStaffMember Load (0.8ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 1 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://baukis.example.com:3000/admin/staff_members
+Completed 302 Found in 13ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-20 15:28:25 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (0.7ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM `staff_members`
+  [1m[36mStaffMember Load (0.9ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 0[0m
+  Rendered admin/staff_members/index.html.erb within layouts/admin (315.3ms)
+  Rendered admin/shared/_header.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 521ms (Views: 514.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:25 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:25 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:26 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:26 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:26 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:26 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:26 +0900
+
+
+Started GET "/assets/admin/pagination.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:26 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:26 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:26 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:26 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-20 15:28:27 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-20 15:28:27 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-20 15:28:27 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-20 15:28:27 +0900
+
+
+Started GET "/admin/staff_members/6/edit" for 10.0.2.2 at 2014-09-20 15:28:30 +0900
+Processing by Admin::StaffMembersController#edit as HTML
+  Parameters: {"host"=>"baukis.example.com", "id"=>"6"}
+  [1m[35mAdministrator Load (0.7ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  [1m[36mStaffMember Load (0.8ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 6 LIMIT 1[0m
+  Rendered admin/staff_members/_form.html.erb (11.8ms)
+  Rendered admin/staff_members/edit.html.erb within layouts/admin (45.9ms)
+  Rendered admin/shared/_header.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 288ms (Views: 281.7ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/admin/staff_members/6" for 10.0.2.2 at 2014-09-20 15:28:39 +0900
+Processing by Admin::StaffMembersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E0wGVujeuZ+gFdDiJThEySKuyvaixkMNvc1MQu8x160=", "staff_member"=>{"email"=>"sato.umeko@example.com", "family_name"=>"佐藤", "given_name"=>"梅子", "family_name_kana"=>"サトウ", "given_name_kana"=>"ウメコ", "start_date"=>"2014-06-09", "end_date"=>"3023-2323-111", "suspended"=>"0"}, "commit"=>"更新", "host"=>"baukis.example.com", "id"=>"6"}
+  [1m[35mAdministrator Load (0.8ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  [1m[36mStaffMember Load (0.8ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://baukis.example.com:3000/admin/staff_members
+Completed 302 Found in 11ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-20 15:28:39 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (0.8ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM `staff_members`[0m
+  [1m[35mStaffMember Load (0.9ms)[0m  SELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 0
+  Rendered admin/staff_members/index.html.erb within layouts/admin (335.5ms)
+  Rendered admin/shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 557ms (Views: 551.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:40 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:40 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:40 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:40 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:40 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:40 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:40 +0900
+
+
+Started GET "/assets/admin/pagination.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:40 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:41 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:41 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-20 15:28:41 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-20 15:28:41 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-20 15:28:41 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-20 15:28:41 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-20 15:28:41 +0900
+
+
+Started GET "/admin/staff_members/6/edit" for 10.0.2.2 at 2014-09-20 15:28:45 +0900
+Processing by Admin::StaffMembersController#edit as HTML
+  Parameters: {"host"=>"baukis.example.com", "id"=>"6"}
+  [1m[36mAdministrator Load (0.7ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35mStaffMember Load (0.7ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 6 LIMIT 1
+  Rendered admin/staff_members/_form.html.erb (8.9ms)
+  Rendered admin/staff_members/edit.html.erb within layouts/admin (43.2ms)
+  Rendered admin/shared/_header.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 299ms (Views: 293.6ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/admin/staff_members/6" for 10.0.2.2 at 2014-09-20 15:29:17 +0900
+Processing by Admin::StaffMembersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E0wGVujeuZ+gFdDiJThEySKuyvaixkMNvc1MQu8x160=", "staff_member"=>{"email"=>"sato.umeko@example.com", "family_name"=>"佐藤", "given_name"=>"梅子", "family_name_kana"=>"サトウ", "given_name_kana"=>"ウメコ", "start_date"=>"2014-06-09", "end_date"=>"2100-01-01", "suspended"=>"0"}, "commit"=>"更新", "host"=>"baukis.example.com", "id"=>"6"}
+  [1m[36mAdministrator Load (0.6ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35mStaffMember Load (0.9ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 6 LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE `staff_members` SET `end_date` = '2100-01-01', `updated_at` = '2014-09-20 06:29:18' WHERE `staff_members`.`id` = 6
+  [1m[36m (11.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://baukis.example.com:3000/admin/staff_members
+Completed 302 Found in 24ms (ActiveRecord: 14.3ms)
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-20 15:29:18 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[35mAdministrator Load (0.8ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM `staff_members`[0m
+  [1m[35mStaffMember Load (0.7ms)[0m  SELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 0
+  Rendered admin/staff_members/index.html.erb within layouts/admin (318.1ms)
+  Rendered admin/shared/_header.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 553ms (Views: 547.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:18 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:18 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:19 +0900
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:19 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:19 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:19 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:19 +0900
+
+
+Started GET "/assets/admin/pagination.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:19 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:19 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:19 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:20 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-20 15:29:20 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-20 15:29:20 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-20 15:29:20 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-20 15:29:20 +0900
+
+
+Started GET "/admin/staff_members/6/edit" for 10.0.2.2 at 2014-09-20 15:29:22 +0900
+Processing by Admin::StaffMembersController#edit as HTML
+  Parameters: {"host"=>"baukis.example.com", "id"=>"6"}
+  [1m[36mAdministrator Load (0.8ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35mStaffMember Load (0.7ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 6 LIMIT 1
+  Rendered admin/staff_members/_form.html.erb (9.3ms)
+  Rendered admin/staff_members/edit.html.erb within layouts/admin (37.8ms)
+  Rendered admin/shared/_header.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 273ms (Views: 267.9ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/admin/staff_members/6" for 10.0.2.2 at 2014-09-20 15:29:24 +0900
+Processing by Admin::StaffMembersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E0wGVujeuZ+gFdDiJThEySKuyvaixkMNvc1MQu8x160=", "staff_member"=>{"email"=>"sato.umeko@example.com", "family_name"=>"佐藤", "given_name"=>"梅子", "family_name_kana"=>"サトウ", "given_name_kana"=>"ウメコ", "start_date"=>"2014-06-09", "end_date"=>"2100-01-01", "suspended"=>"0"}, "commit"=>"更新", "host"=>"baukis.example.com", "id"=>"6"}
+  [1m[36mAdministrator Load (0.7ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35mStaffMember Load (0.7ms)[0m  SELECT  `staff_members`.* FROM `staff_members`  WHERE `staff_members`.`id` = 6 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://baukis.example.com:3000/admin/staff_members
+Completed 302 Found in 11ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/admin/staff_members" for 10.0.2.2 at 2014-09-20 15:29:24 +0900
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis.example.com"}
+  [1m[36mAdministrator Load (0.6ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM `staff_members`
+  [1m[36mStaffMember Load (1.0ms)[0m  [1mSELECT  `staff_members`.* FROM `staff_members`   ORDER BY `staff_members`.`family_name_kana` ASC, `staff_members`.`given_name_kana` ASC LIMIT 10 OFFSET 0[0m
+  Rendered admin/staff_members/index.html.erb within layouts/admin (314.8ms)
+  Rendered admin/shared/_header.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 539ms (Views: 532.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/admin/_dimensions.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:25 +0900
+
+
+Started GET "/assets/admin/_colors.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:25 +0900
+
+
+Started GET "/assets/admin/form.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:25 +0900
+
+
+Started GET "/assets/admin/container.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:25 +0900
+
+
+Started GET "/assets/admin/flash.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:25 +0900
+
+
+Started GET "/assets/shared/errors.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:26 +0900
+
+
+Started GET "/assets/admin/layout.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:26 +0900
+
+
+Started GET "/assets/admin/pagination.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:26 +0900
+
+
+Started GET "/assets/admin/sessions.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:26 +0900
+
+
+Started GET "/assets/admin/table.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:26 +0900
+
+
+Started GET "/assets/admin.css?body=1" for 10.0.2.2 at 2014-09-20 15:29:26 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2014-09-20 15:29:26 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2014-09-20 15:29:26 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2014-09-20 15:29:27 +0900
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2014-09-20 15:29:27 +0900
+
+
+Started GET "/admin/staff_members/6/edit" for 10.0.2.2 at 2014-09-20 15:55:08 +0900
+Processing by Admin::StaffMembersController#edit as HTML
+  Parameters: {"host"=>"baukis.example.com", "id"=>"6"}
+  [1m[35mAdministrator Load (0.7ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+Completed 500 Internal Server Error in 100ms
+
+NameError (uninitialized constant StaffMember::StringNormalizer):
+  app/models/staff_member.rb:2:in `<class:StaffMember>'
+  app/models/staff_member.rb:1:in `<top (required)>'
+  app/controllers/admin/staff_members_controller.rb:22:in `edit'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.7ms)
+
+
+Started GET "/admin/staff_members/6/edit" for 10.0.2.2 at 2014-09-20 15:55:09 +0900
+Processing by Admin::StaffMembersController#edit as HTML
+  Parameters: {"host"=>"baukis.example.com", "id"=>"6"}
+  [1m[36mAdministrator Load (0.9ms)[0m  [1mSELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 54ms
+
+NameError (uninitialized constant StaffMember::StringNormalizer):
+  app/models/staff_member.rb:2:in `<class:StaffMember>'
+  app/models/staff_member.rb:1:in `<top (required)>'
+  app/controllers/admin/staff_members_controller.rb:22:in `edit'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.6ms)
+
+
+Started GET "/admin/staff_members/6/edit" for 10.0.2.2 at 2014-09-20 15:58:28 +0900
+Processing by Admin::StaffMembersController#edit as HTML
+  Parameters: {"host"=>"baukis.example.com", "id"=>"6"}
+  [1m[35mAdministrator Load (0.7ms)[0m  SELECT  `administrators`.* FROM `administrators`  WHERE `administrators`.`id` = 1 LIMIT 1
+Completed 500 Internal Server Error in 139ms
+
+ArgumentError (Unknown validator: 'EmailValidator'):
+  app/models/staff_member.rb:18:in `<class:StaffMember>'
+  app/models/staff_member.rb:1:in `<top (required)>'
+  app/controllers/admin/staff_members_controller.rb:22:in `edit'
+
+
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.2ms)
