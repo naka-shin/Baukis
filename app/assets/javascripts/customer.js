@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require_tree ./shared
+//= require_tree ./customer
+//= require jquery.ui.datepicker
+//= require jquery.ui.datepicker-ja
